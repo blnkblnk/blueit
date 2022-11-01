@@ -77,12 +77,7 @@ Optional
 
 **Flow Navigation** (Screen to Screen)
 
-* Opening Screen
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+Login → Homescreen(trending topics) → View specific subreddit → Write thoughts/comments → Post thoughts/comments → Being able to upvote/downvote → press back to return to homescreen → ability to logout --
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
