@@ -53,7 +53,7 @@ In this project, we design a replication of the app named "Reddit" and implement
    * Each user is required to click the sign up button if this is their first time using the app. They will then sign up for the application through the signup portal.
    * Users are able to sign up new accounts in the register screen.
 * Feed Screen
-   *
+   * rgrg
 
 ### 3. Navigation
 
