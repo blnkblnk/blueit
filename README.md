@@ -13,16 +13,16 @@ Original App Design Project - README Template
 
 ## Overview
 ### Description
-In this project, we design a replication of the app named "Reddit" and implement some of the functionalites. The app "Reddit" is a social media platform where the communities are divided into "subreddits" based on topics and interests. Users are able to post images, links or text annonymously on subreddits and everyone has the capability to vote, such as upvote or downvote, 
+In this project, we design a replication of the app named "Reddit" and implement some of the functionalites to create "Blueit". The app "Reddit" is a social media platform where the communities are divided into "subreddits" based on topics and interests. Users are able to post images, links or text annonymously on subreddits and everyone has the capability to vote, such as upvote or downvote, 
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+- **Category: Social Media**
+- **Mobile: On Iphone using Swift**
+- **Story: The app "Blueit" will be a social media platform where the communities are divided into "subreddits" based on topics and interests**
+- **Market: For people interested in seeing news and topics made by users around the world about a specific topic. It is a hub full of different subjects that anyone can view providing you with a place to ask questions**
+- **Habit: Numerous times throughout the day, users can post. Users can see what others are asking and can view and share links or text posts for people to see throughout time. By scrolling through endless posts you will form a habit listening to what people are saying.**
+- **Scope: Everyone can download Blueit**
 
 ## Product Spec
 
@@ -30,22 +30,32 @@ In this project, we design a replication of the app named "Reddit" and implement
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* User will be able log create account and login
+* Users are able to set their profile picture
+* User will be able to view trending posts
+* User will be able to view comments on posts
+* User will be able to post text, links, or images to “Subreddits”
+* User will be able to comment on posts
+* User will be able to upvote or downvote on subreddits
+* 
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* Users can be able to send messages to other users
+* Users are able to use the camera to take a picture and set their profile picture
+* Users can see the date and time the post was made along with the comments
+* Settings page where you can change username, password, or email.
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
+* Opening Screen
+   * When opening the Blueit app, the user will be shown the logo for the app.
+* Login Screen
+   * When first opening the Blueit, the user will be shown to the login screen to sign up or sign in. Unless they log out, the user will remain logged in when they reopen the app.
    * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* Register Screen
+   * Each user is required to click the sign up button if this is their first time using the app. They will then sign up for the application through the signup portal.
+   * Users are able to sign up new accounts in the register screen.
 
 ### 3. Navigation
 
