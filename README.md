@@ -35,7 +35,6 @@ In this project, we design a replication of the app named "Reddit" and implement
 * User will be able to post text, links, or images to “Subreddits”
 * User will be able to comment on posts
 * User will be able to upvote or downvote on subreddits
-* 
 
 **Optional Nice-to-have Stories**
 
@@ -50,10 +49,11 @@ In this project, we design a replication of the app named "Reddit" and implement
    * When opening the Blueit app, the user will be shown the logo for the app.
 * Login Screen
    * When first opening the Blueit, the user will be shown to the login screen to sign up or sign in. Unless they log out, the user will remain logged in when they reopen the app.
-   * ...
 * Register Screen
    * Each user is required to click the sign up button if this is their first time using the app. They will then sign up for the application through the signup portal.
    * Users are able to sign up new accounts in the register screen.
+* Feed Screen
+   *
 
 ### 3. Navigation
 
