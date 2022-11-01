@@ -54,6 +54,8 @@ In this project, we design a replication of the app named "Reddit" and implement
    * Users are able to sign up new accounts in the register screen.
 * Feed Screen
    * Here, the user will see subreddit posts in a feed style. The user can select on any of the post entries to view it.
+   * User can press the upvote or downvote option
+   * User sees the most popular post on first main screen
 * Profile Screen
    * User can view and change their settings here such as profile picture.
 * Post Screen
@@ -63,13 +65,19 @@ In this project, we design a replication of the app named "Reddit" and implement
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Login Portal
+* View News Page/ current trending topics
+* Look at detail about trending topics, and be able to view comments
+
+Optional
+
+* Direct Messages
+* Settings
+* Search Bar
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
+* Opening Screen
    * [list screen navigation here]
    * ...
 * [list second screen here]
