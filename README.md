@@ -88,7 +88,12 @@ Optional
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://i.imgur.com/rvBAxge.png" width=600>
+<img src="https://i.imgur.com/6Kn6S1r.png" width=600>
+<img src="https://i.imgur.com/J8AuQKR.png" width=600>
+<img src="https://i.imgur.com/livy7px.png" width=600>
+<img src="https://i.imgur.com/cUivX7s.png" width=600>
+<img src="https://i.imgur.com/g4dAZEV.png" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
