@@ -1,9 +1,7 @@
-# blueit
+# Blueit
 
 Original App Design Project - README Template
 ===
-
-# Blueit
 
 ## Table of Contents
 1. [Overview](#Overview)
