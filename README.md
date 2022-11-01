@@ -53,7 +53,11 @@ In this project, we design a replication of the app named "Reddit" and implement
    * Each user is required to click the sign up button if this is their first time using the app. They will then sign up for the application through the signup portal.
    * Users are able to sign up new accounts in the register screen.
 * Feed Screen
-   * rgrg
+   * Here, the user will see subreddit posts in a feed style. The user can select on any of the post entries to view it.
+* Profile Screen
+   * User can view and change their settings here such as profile picture.
+* Post Screen
+   * User post a about a topic in a specific subreddit. There will be options to add pictures, links, etc.  
 
 ### 3. Navigation
 
