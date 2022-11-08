@@ -102,57 +102,8 @@ Optional
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-Login
-Property	Type	Description
-Logo	Image/File	Blueit Logo pulled from files
-Username	String	Username pulled from API
-Password	String	Password pulled from API
-Login	Button	Checks authentication to allow access
-Register	Button	Redirects user to different screen to register to use app
-Blueit	Title/string	Title of the App
-
-Register
-Property	Type	Description
-Logo	Image/File	Blueit Logo pulled from files
-Username	String	Username pulled from API
-Password	String	Password pulled from API
-First Name	String	Input from the user 
-Last name	String	Input from the user
-Register	Button	Allows user to register their account
-Blueit	Title/string	Title of the App
-
-Homepage
-Property	Type	Description
-Logo	Image/File	Blueit Logo pulled from files
-Logout	Button	Allows user to logout from app
-Profile	Button	Allows user to access  their account info
-Headline	String	Latest feed headline pulled from API
-Information/element	String	Post from corresponding headline pulled from API
-Image	Image	Pulled from API correlating to the post
-Time	Integer/let	Time of post pulled from API
-Blueit	Title/string	Title of the App
-
-Profile
-Property	Type	Description
-Logo	Image/File	Blueit Logo pulled from files
-Username	String	Username pulled from API
-Headline	String	Latest post made by user pulled from api
-Information/element	String	Post from corresponding headline pulled from API
-Time	Let/Integer	Time of post pulled from API
-Logout	Button	Allows user to logout from their account
-Homescreen	Button	Allows user to return to main feed screen
-Blueit	Title/string	Title of the App
-
-Posting
-Property	Type	Description
-Logo	Image/File	Blueit Logo pulled from files
-Post Title	Label/string	Allows user to input their headline title
-Subreddit	Label/string	Allows user to choose which subreddit from api to post
-Post Content	String/label	Input from the user 
-Exit	Button	Allows user to exit from post to return to feed screen
-Post	Button	Allows user to post to the feed
-Blueit	Title/string	Title of the App
-
+<img src="https://imgur.com/XCpzo67" width=600>
+<img src="https://imgur.com/8W0w9gg" width=600>
 
 
 [Add table of models]
