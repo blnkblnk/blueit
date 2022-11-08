@@ -102,8 +102,8 @@ Optional
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-<img src="https://imgur.com/XCpzo67" width=600>
-<img src="https://imgur.com/8W0w9gg" width=600>
+<img src="https://imgur.com/XCpzo67.png" width=600>
+<img src="https://imgur.com/8W0w9gg.png" width=600>
 
 
 [Add table of models]
