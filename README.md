@@ -113,7 +113,8 @@ Login Screen
 •	(INPUT) User types in Username and password
 o	(GET)Authentication is checked through the network
 	Error login response if Authentication is incorrect
-func onLoginButton(_ sender: Any) {
+
+	func onLoginButton(_ sender: Any) {
         
         let myUrl = " https://www.reddit.com/api/v1/request_token"
         
@@ -129,10 +130,12 @@ func onLoginButton(_ sender: Any) {
 Register Screen
 •	(CREATE/POST) User types in first and last name username and password
 o	First and last name, username and password is sent to network to register account
+
     func onSignup(_ sender: Any) {
         let user = PFUser()
 	user.firstName = firstNameField.text
-user.lastName = lastNameField.text
+	
+	user.lastName = lastNameField.text
        	user.username = usernameField.text
       	user.password = passwordField.text
 
@@ -148,6 +151,7 @@ Home Feed screen
 •	(READ) Read network for latest trending topics/subreddits 
 o	Pull the latest feeds and headlines to the home feed screen
 o	Pulls any images correlating to the headline post
+
         let post = posts[indexPath.section]
         let content = (post["content "] as? [PFObject]) ?? []
         if indexPath.row  == 0 {
@@ -162,20 +166,23 @@ Profile View
 o	(UPDATE/PUT)
 •	User can view latest post
 o	(READ)
-struct Profile_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView() // Replace Profile() with ContentView()
-    }
-}
+
+	struct Profile_Previews: PreviewProvider {
+    		static var previews: some View {
+       	 ContentView() // Replace Profile() with ContentView()
+   	 }
+	}
+	
 Post Content view
 •	User can post new content using headline/ subreddit/ information
 o	(CREATE/POST)
-func Post(_ sender: Any) {        
+
+	func Post(_ sender: Any) {        
         if (!PostTextview.text.isEmpty) {
             RedditAPICaller.client?.post(redditString: ContentTextview.text, success: {self.dismiss(animated: true, completion: nil)}, failure: { (error) in
                 print("Error posting content \(error)").self
             })
-}
+	}
 
 
 
