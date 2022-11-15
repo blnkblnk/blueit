@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		D175100C291ADAB0002C1715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D175100B291ADAB0002C1715 /* AppDelegate.swift */; };
 		D175100E291ADAB0002C1715 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D175100D291ADAB0002C1715 /* SceneDelegate.swift */; };
-		D1751010291ADAB0002C1715 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D175100F291ADAB0002C1715 /* ViewController.swift */; };
 		D1751013291ADAB0002C1715 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1751011291ADAB0002C1715 /* Main.storyboard */; };
 		D1751015291ADAB2002C1715 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1751014291ADAB2002C1715 /* Assets.xcassets */; };
 		D1751018291ADAB2002C1715 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1751016291ADAB2002C1715 /* LaunchScreen.storyboard */; };
 		D1751023291ADAB2002C1715 /* blueitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1751022291ADAB2002C1715 /* blueitTests.swift */; };
 		D175102D291ADAB2002C1715 /* blueitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D175102C291ADAB2002C1715 /* blueitUITests.swift */; };
 		D175102F291ADAB2002C1715 /* blueitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D175102E291ADAB2002C1715 /* blueitUITestsLaunchTests.swift */; };
+		D1EE55B12924551D000FD81D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE55B02924551D000FD81D /* LoginViewController.swift */; };
+		D1EE55B72924568B000FD81D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE55B62924568B000FD81D /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		D1751008291ADAB0002C1715 /* blueit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blueit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D175100B291ADAB0002C1715 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D175100D291ADAB0002C1715 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D175100F291ADAB0002C1715 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D1751012291ADAB0002C1715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D1751014291ADAB2002C1715 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1751017291ADAB2002C1715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		D1751028291ADAB2002C1715 /* blueitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blueitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D175102C291ADAB2002C1715 /* blueitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blueitUITests.swift; sourceTree = "<group>"; };
 		D175102E291ADAB2002C1715 /* blueitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blueitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D1EE55B02924551D000FD81D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D1EE55B62924568B000FD81D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +103,12 @@
 			children = (
 				D175100B291ADAB0002C1715 /* AppDelegate.swift */,
 				D175100D291ADAB0002C1715 /* SceneDelegate.swift */,
-				D175100F291ADAB0002C1715 /* ViewController.swift */,
 				D1751011291ADAB0002C1715 /* Main.storyboard */,
 				D1751014291ADAB2002C1715 /* Assets.xcassets */,
 				D1751016291ADAB2002C1715 /* LaunchScreen.storyboard */,
 				D1751019291ADAB2002C1715 /* Info.plist */,
+				D1EE55B02924551D000FD81D /* LoginViewController.swift */,
+				D1EE55B62924568B000FD81D /* FeedViewController.swift */,
 			);
 			path = blueit;
 			sourceTree = "<group>";
@@ -258,8 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1751010291ADAB0002C1715 /* ViewController.swift in Sources */,
+				D1EE55B12924551D000FD81D /* LoginViewController.swift in Sources */,
 				D175100C291ADAB0002C1715 /* AppDelegate.swift in Sources */,
+				D1EE55B72924568B000FD81D /* FeedViewController.swift in Sources */,
 				D175100E291ADAB0002C1715 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
