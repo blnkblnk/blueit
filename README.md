@@ -28,7 +28,7 @@ In this project, we design a replication of the app named "Reddit" and implement
 
 **Required Must-have Stories**
 
-* User will be able log create account and login
+* User will be able log create account and login (DONE)
 * Users are able to set their profile picture
 * User will be able to view trending posts
 * User will be able to view comments on posts
