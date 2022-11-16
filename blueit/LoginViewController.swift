@@ -9,6 +9,19 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    
+    
+    @IBAction func onLogin(_ sender: Any) {
+        
+        
+        
+        let oauthURL = URL(string: "https://www.reddit.com/api/v1/authorize?client_id=fGLcC77TVgO0idNwa_TNqQ&response_type=code&state=iosApp&redirect_uri=blueit://a&duration=temporary&scope=read")!
+        UIApplication.shared.open(oauthURL)
+        
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

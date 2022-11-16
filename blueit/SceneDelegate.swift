@@ -17,8 +17,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let url = URLContexts.first?.url else {
                 return
             }
-        print(scene as Any)
-        print(URLContexts as Any)
+        DispatchQueue.main.async {
+            self.window?.rootViewController?.performSegue(withIdentifier: "loginToHome", sender: nil)
+        }
+        print(url as Any)
     }
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
