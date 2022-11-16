@@ -20,7 +20,7 @@ class FeedViewController: UIViewController {
         print("FEED VIEW CONTROLLER")
         print(SceneDelegate.client.getLogin())
         print(loginInfo as Any)
-        loginInfo.text = SceneDelegate.client.getLogin()
+        loginInfo.text = "API token = " + SceneDelegate.client.getLogin()
     }
       
     /*

@@ -7,6 +7,13 @@
 
 import UIKit
 
+extension URL {
+    func valueOf(_ queryParameterName: String) -> String? {
+        guard let url = URLComponents(string: self.absoluteString) else { return nil }
+        return url.queryItems?.first(where: { $0.name == queryParameterName })?.value
+    }
+}
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     static let client = SceneDelegate()
     var window: UIWindow?
@@ -20,7 +27,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let url = URLContexts.first?.url else {
                 return
             }
-        SceneDelegate.loginURL = url.absoluteString
+        SceneDelegate.loginURL = url.valueOf("code")!
         DispatchQueue.main.async {
             self.window?.rootViewController?.performSegue(withIdentifier: "loginToHome", sender: nil)
         }
