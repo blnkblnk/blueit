@@ -189,3 +189,9 @@ o	(CREATE/POST)
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+Unit 10 Sprint
+
+Here's a walkthrough of implemented user stories:
+
+<img src='https://media.giphy.com/media/xpYneg8nhmXcCSUnlU/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
