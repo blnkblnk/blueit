@@ -8,19 +8,24 @@
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
+    static let client = SceneDelegate()
     var window: UIWindow?
-
-    //    public func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+    static var loginURL: String = ""
+    
+    func getLogin() -> String {
+        return SceneDelegate.loginURL
+    }
     
     func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
         guard let url = URLContexts.first?.url else {
                 return
             }
+        SceneDelegate.loginURL = url.absoluteString
         DispatchQueue.main.async {
             self.window?.rootViewController?.performSegue(withIdentifier: "loginToHome", sender: nil)
         }
-        print(url as Any)
+        print("LOGIN URL SCENE DELEGATE")
+        print(SceneDelegate.loginURL)
     }
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
