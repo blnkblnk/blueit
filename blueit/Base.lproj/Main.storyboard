@@ -16,9 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dp-FY-9iM">
-                                <rect key="frame" x="75" y="444" width="276" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="256" translatesAutoresizingMaskIntoConstraints="NO" id="M3z-ZH-spK">
+                                <rect key="frame" x="71.666666666666686" y="129" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="BAQ-Jc-3G8"/>
+                                    <constraint firstAttribute="height" constant="250" id="p14-tG-Do1"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dp-FY-9iM">
+                                <rect key="frame" x="70.333333333333329" y="430" width="252.33333333333337" height="47.666666666666686"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -30,17 +36,17 @@
                                     <action selector="onLogin:" destination="fHd-VH-BHQ" eventType="touchUpInside" id="GnO-gf-b7m"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="256" translatesAutoresizingMaskIntoConstraints="NO" id="H5b-YX-jb9">
-                                <rect key="frame" x="75" y="129" width="256" height="256"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="256" translatesAutoresizingMaskIntoConstraints="NO" id="M3z-ZH-spK">
-                                <rect key="frame" x="75" y="129" width="256" height="256"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VIL-NB-MYc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="M3z-ZH-spK" firstAttribute="top" secondItem="VIL-NB-MYc" secondAttribute="top" constant="70" id="6uS-IQ-QNk"/>
+                            <constraint firstItem="4dp-FY-9iM" firstAttribute="leading" secondItem="VIL-NB-MYc" secondAttribute="leading" constant="70.333333333333329" id="Ive-5r-N6E"/>
+                            <constraint firstItem="VIL-NB-MYc" firstAttribute="trailing" secondItem="4dp-FY-9iM" secondAttribute="trailing" constant="70.333333333333314" id="Smr-wb-cu4"/>
+                            <constraint firstItem="M3z-ZH-spK" firstAttribute="centerX" secondItem="VIL-NB-MYc" secondAttribute="centerX" id="XsV-5b-sJk"/>
+                            <constraint firstItem="4dp-FY-9iM" firstAttribute="centerX" secondItem="VIL-NB-MYc" secondAttribute="centerX" id="kps-e8-ygD"/>
+                            <constraint firstItem="4dp-FY-9iM" firstAttribute="top" secondItem="VIL-NB-MYc" secondAttribute="top" constant="371" id="qq5-s1-BiC"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="gk2-Fr-0yc" kind="presentation" identifier="loginToHome" id="dSF-Zu-1FF"/>
