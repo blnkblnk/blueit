@@ -30,7 +30,7 @@ class FeedViewController: UIViewController {
             
             //RedditAPICaller.client.accessPost(postList: posts, index: Int)
             //gets the post info at an index
-            let first_post = RedditAPICaller.client.accessPost(post_list: posts, index: 1)
+            let first_post = RedditAPICaller.client.accessPost(post_list: posts, index: 0)
             //you need the id of a post to get its comments
             //getComments only gets the top level comments (cant get replys to comments yet)
             let first_post_id = first_post?["id"]
