@@ -118,13 +118,37 @@ class RedditAPICaller: NSObject {
     func getBestPosts(limit: Int) async throws -> [[String: Any]]? {
         return try await self.get(endPoint: "/best", params: ["limit":String(limit)]) as? [[String: Any]]
     }
-    
-    func getComments(articleId: String, limit: Int, depth: Int = 0, sort: String = "top") async throws -> [[String: Any]]? {
-        return try await self.get(endPoint: "/comments/"+articleId, params: [
-            "article":articleId,
+    func accessPost(post_list: [[String:Any]]?, index: Int) -> [String:Any]? {
+        guard let nth_post = post_list![index]["data"] as? [String:Any] else {
+            print("could not get post")
+            return nil
+        }
+        return nth_post
+    }
+    func getComments(article_id: String, limit: Int, depth: Int = 0, sort: String = "top") async throws -> [[String: Any]]? {
+        return try await self.get(endPoint: "/comments/"+article_id, params: [
             "limit":String(limit),
             "depth":String(depth),
             "sort":sort
         ]) as? [[String: Any]]
+    }
+    func accessComment(comment_list: [[String:Any]]?, index: Int) -> [String:Any]? {
+        guard let comment = comment_list![index+1]["data"] as? [String:Any] else {
+            print("could not get comment A")
+            return nil
+        }
+        guard let comment = comment["children"] as? [Any] else {
+            print("could not get comment B")
+            return nil
+        }
+        guard let comment = comment[0] as? [String:Any] else {
+            print("could not get comment C")
+            return nil
+        }
+        guard let comment = comment["data"] as? [String:Any] else {
+            print("could not get comment D")
+            return nil
+        }
+        return comment
     }
 }
