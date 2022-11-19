@@ -17,10 +17,7 @@ class FeedViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {
-        print("FEED VIEW CONTROLLER")
-        print(SceneDelegate.client.getLogin())
-        print(loginInfo as Any)
-        loginInfo.text = "API token = " + SceneDelegate.client.getLogin()
+        loginInfo.text = "API token = " + (RedditAPICaller.sessionToken ?? "nil")
     }
       
     /*

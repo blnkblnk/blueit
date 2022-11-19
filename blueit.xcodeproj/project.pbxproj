@@ -10,6 +10,7 @@
 		3A3956C8398433907E0A9815 /* Pods_blueit_blueitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4510A62FAE082F86F5C08050 /* Pods_blueit_blueitUITests.framework */; };
 		7882F8AEABDC26411E6A1DD1 /* Pods_blueit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F1DA806082E85CD10CA83E /* Pods_blueit.framework */; };
 		843C0C3C81E71F039AEA7D65 /* Pods_blueitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8118C6B82AC3C9C0A021FEEB /* Pods_blueitTests.framework */; };
+		A0FBB8DE292924CC009C3EEB /* RedditAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FBB8DD292924CB009C3EEB /* RedditAPICaller.swift */; };
 		D175100C291ADAB0002C1715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D175100B291ADAB0002C1715 /* AppDelegate.swift */; };
 		D175100E291ADAB0002C1715 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D175100D291ADAB0002C1715 /* SceneDelegate.swift */; };
 		D1751013291ADAB0002C1715 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1751011291ADAB0002C1715 /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		6312DFDE405C8AACB6F55905 /* Pods-blueit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blueit.debug.xcconfig"; path = "Target Support Files/Pods-blueit/Pods-blueit.debug.xcconfig"; sourceTree = "<group>"; };
 		8118C6B82AC3C9C0A021FEEB /* Pods_blueitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_blueitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B3C5FDE62350D4B6797CE6 /* Pods-blueit-blueitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blueit-blueitUITests.release.xcconfig"; path = "Target Support Files/Pods-blueit-blueitUITests/Pods-blueit-blueitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A0FBB8DD292924CB009C3EEB /* RedditAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditAPICaller.swift; sourceTree = "<group>"; };
 		C5E710CEFBA97A2E107AD75C /* Pods-blueitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blueitTests.debug.xcconfig"; path = "Target Support Files/Pods-blueitTests/Pods-blueitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1751008291ADAB0002C1715 /* blueit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blueit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D175100B291ADAB0002C1715 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,7 +105,6 @@
 				C5E710CEFBA97A2E107AD75C /* Pods-blueitTests.debug.xcconfig */,
 				1506E39F3C08C1D5A991FD8A /* Pods-blueitTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -132,6 +133,7 @@
 		D175100A291ADAB0002C1715 /* blueit */ = {
 			isa = PBXGroup;
 			children = (
+				A0FBB8DD292924CB009C3EEB /* RedditAPICaller.swift */,
 				D175100B291ADAB0002C1715 /* AppDelegate.swift */,
 				D175100D291ADAB0002C1715 /* SceneDelegate.swift */,
 				D1751011291ADAB0002C1715 /* Main.storyboard */,
@@ -412,6 +414,7 @@
 			files = (
 				D1EE55B12924551D000FD81D /* LoginViewController.swift in Sources */,
 				D175100C291ADAB0002C1715 /* AppDelegate.swift in Sources */,
+				A0FBB8DE292924CC009C3EEB /* RedditAPICaller.swift in Sources */,
 				D1EE55B72924568B000FD81D /* FeedViewController.swift in Sources */,
 				D175100E291ADAB0002C1715 /* SceneDelegate.swift in Sources */,
 			);

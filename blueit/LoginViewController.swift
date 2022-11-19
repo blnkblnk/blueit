@@ -7,25 +7,31 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
 
+let DURATION = "temporary"
+let SCOPE = "read"
+let STATE = "pyscript"
+
+let OAUTH_URL = URL(string: "https://www.reddit.com/api/v1/authorize?client_id=\(CLIENT_ID)&response_type=code&state=\(STATE)&redirect_uri=\(REDIRECT_URI)&duration=\(DURATION)&scope=\(SCOPE)")!
+
+class LoginViewController: UIViewController {
+    static var client: LoginViewController? = nil
     
     
     @IBAction func onLogin(_ sender: Any) {
-        
-        
-        
-        let oauthURL = URL(string: "https://www.reddit.com/api/v1/authorize?client_id=fGLcC77TVgO0idNwa_TNqQ&response_type=code&state=iosApp&redirect_uri=blueit://a&duration=temporary&scope=read")!
-        UIApplication.shared.open(oauthURL)
-        
-        
+        UIApplication.shared.open(OAUTH_URL)
     }
     
     
     override func viewDidLoad() {
+        LoginViewController.client = self
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func goToFeed() {
+        self.performSegue(withIdentifier: "loginToHome", sender: self)
     }
     
 

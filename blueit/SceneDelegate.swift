@@ -7,32 +7,20 @@
 
 import UIKit
 
-extension URL {
-    func valueOf(_ queryParameterName: String) -> String? {
-        guard let url = URLComponents(string: self.absoluteString) else { return nil }
-        return url.queryItems?.first(where: { $0.name == queryParameterName })?.value
-    }
-}
-
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-    static let client = SceneDelegate()
     var window: UIWindow?
-    static var loginURL: String = ""
-    
-    func getLogin() -> String {
-        return SceneDelegate.loginURL
+    static let client = SceneDelegate()
+    //this function is called when you get redirected from blueit:// (after the user authenticates their reddit account)
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        RedditAPICaller.client.setSessionToken(openURLContexts: URLContexts)
     }
     
-    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
-        guard let url = URLContexts.first?.url else {
-                return
-            }
-        SceneDelegate.loginURL = url.valueOf("code")!
+    func goToFeed() {
+        print("1")
         DispatchQueue.main.async {
             self.window?.rootViewController?.performSegue(withIdentifier: "loginToHome", sender: nil)
         }
-        print("LOGIN URL SCENE DELEGATE")
-        print(SceneDelegate.loginURL)
+        print("2")
     }
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
