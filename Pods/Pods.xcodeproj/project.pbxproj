@@ -7,19 +7,84 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DC402E6BFF29D1F210C924F9029D3D0 /* Pods-blueit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 507FBE4D55B526130BBE3816AE7487AB /* Pods-blueit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2A9E2A034DA1E20C3BAEAA0192574B11 /* Pods-blueitTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 046CF1ED32B4E441558952BA8611EAB9 /* Pods-blueitTests-dummy.m */; };
-		3501AE05E24178FC56688567807C8F5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		3DD1367B157EB0AD99B4F60C201A4AB8 /* Pods-blueitTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ACF6ABB7EDAFB21D8427947AC9F18BC2 /* Pods-blueitTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E2F3A39EED4EE899F70FF94905626C9 /* Pods-blueit-blueitUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8AE5CE88C3DB90318546CD3A0ECC05 /* Pods-blueit-blueitUITests-dummy.m */; };
-		AF8EB364F3812A15EA74BD894A90F3CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		B6DBFEB98F0D2F0ECCAFE7E89EB17A9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		D1A01C71AE177DAD8AF869872BD3D5D2 /* Pods-blueit-blueitUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 49A844D6BF92CFE95A3BBEC821A33FAA /* Pods-blueit-blueitUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFB370CD3054E90F4297AE91DEE01FCB /* Pods-blueit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88705E76351FF706BCEC53AD29C8918F /* Pods-blueit-dummy.m */; };
+		040842DBECE66E60291D1F4AA544202A /* BDBOAuth1SessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B80C76A5E052A88D325D41A00B8DDA /* BDBOAuth1SessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09BE858876FA16410D7EE9FB86DEFFCC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BD052A579739CF222ED22AD56A72D3 /* SystemConfiguration.framework */; };
+		0E75E370B23394B2A4ECC79AD1DDC4E7 /* BDBOAuth1SessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DD4D83B5EC16AAC8B461274BECDC4D /* BDBOAuth1SessionManager.m */; };
+		13ED1E63A2C152A2D76C32EAF9BD338E /* NSDictionary+BDBOAuth1Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EE14084F86CF2FB66E291A28E5D728 /* NSDictionary+BDBOAuth1Manager.m */; };
+		159220507D69C101DF726D6F079E972F /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D39719745A28450AE90B37EF962E7C3 /* AFSecurityPolicy.m */; };
+		1B5D786D6C4EE9CD24B83797BC667753 /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 271DF4BC34EC44DBD711E6E846605578 /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D6914434AECC7A2A2D5AEA24464241A /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 207A32F71153D0F9168502DDEC63905E /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		206B07C611B8171962E2909C757FF5A7 /* BDBOAuth1RequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C582146110CBACF329E3AF5E3541D2 /* BDBOAuth1RequestSerializer.m */; };
+		23AAF2BC52E40636E1434F6819E929FD /* Pods-blueit-blueitUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 73B0419F87A7746D7B6457B5C5E5E615 /* Pods-blueit-blueitUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26E213E53609F288A3A0AD8FC1109A26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 894B54DA06733FD730C8E2E26B228654 /* Foundation.framework */; };
+		2A9E2A034DA1E20C3BAEAA0192574B11 /* Pods-blueitTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EA2CBAD36384AD7A0C34B378E56790 /* Pods-blueitTests-dummy.m */; };
+		2F9D343FB9FC774014144AF2E8717BA2 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 63122780D89C6687BB7D39F94DB449E7 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3501AE05E24178FC56688567807C8F5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 894B54DA06733FD730C8E2E26B228654 /* Foundation.framework */; };
+		3DD1367B157EB0AD99B4F60C201A4AB8 /* Pods-blueitTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 925898C9F489BE182A526CC93FA132E8 /* Pods-blueitTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63CA6CB5268DFEA6D88091D7466DA33A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98BB627936995ED38ED1DBFF599BE48B /* Security.framework */; };
+		7CB41B12ABD94ACD151D0CF91B7E9405 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 894B54DA06733FD730C8E2E26B228654 /* Foundation.framework */; };
+		7FD8C924ED2EF7831345B7FBE842AA47 /* Pods-blueit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC9A6509B9A5939CC974D3834836E72 /* Pods-blueit-dummy.m */; };
+		822D94880C994540D0DDD562F974A34B /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 54979FE99886E2261D1245A5DCF2CA75 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88699EF07D6C7AEE4D9D68C177BBC482 /* Pods-blueit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DA76436621BD128E0EB979A74A6C819 /* Pods-blueit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89488A8524FF89D5EEAF6BE31C8B1E8A /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5FA02C3DD189A826DFDB62A69B2A2B /* AFURLRequestSerialization.m */; };
+		89E109ACF923E14103812A85F054F32C /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3822DDFCDB3EFB66E8B2CD01ADFB8545 /* AFURLSessionManager.m */; };
+		9F3E658BB146B3E15223C67B365B7700 /* BDBOAuth1Manager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5BC6BDE5990EDE172879F5E320D73C /* BDBOAuth1Manager-dummy.m */; };
+		B52A260053426F6341DB6CB66AD01992 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = C84356B67A97182915646C9708A7F6AE /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9B5A87AA44B6191FC13EB6F80AFA67B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 894B54DA06733FD730C8E2E26B228654 /* Foundation.framework */; };
+		C58F682075299264D247E759488F6FB5 /* BDBOAuth1RequestSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E9DA38AA2565372A5C5DEE68239B40 /* BDBOAuth1RequestSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C762C65F80FB573DC93D5BB43ECCBFD5 /* BDBOAuth1Manager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CEC35F695352625EA3A8177A76F3FAEE /* BDBOAuth1Manager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFE95272F76DF03BADA5560A915DF7CB /* NSString+BDBOAuth1Manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E967AEBE7ECB37E177E28FB6FAD7509 /* NSString+BDBOAuth1Manager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D193E7520993BAFF98A439E8DF89EA59 /* NSDictionary+BDBOAuth1Manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D11162C98BE35D027B4C8FD3692B027 /* NSDictionary+BDBOAuth1Manager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5FDF80522D54236D3FC98F281847EE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 894B54DA06733FD730C8E2E26B228654 /* Foundation.framework */; };
+		D8E08496D6E358C574382D3EDA5545C8 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DF032CBA6703F10AA4B2292B37246C03 /* AFURLResponseSerialization.m */; };
+		DAB425139E181BE6DD4797ABDCAC08D1 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FD260B631C8D511DD945E1DE2063FACD /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE472D2B5F5072D5DA7DA593EC15F526 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184765213831524EBBA56491EADF44BB /* MobileCoreServices.framework */; };
+		E06F2382C8D9E9BD87DDD4447715006C /* Pods-blueit-blueitUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2673C5FB80447BC189440D075FAC93A0 /* Pods-blueit-blueitUITests-dummy.m */; };
+		E882BD9E55DF1FBCE74BBEA5DFCC6A8D /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 064DA36DB23719011321F70F81288DCA /* AFHTTPSessionManager.m */; };
+		EA66AE0C38E25C85D83176BA240E153C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD797D25089E2F3B4D72A37846DF16F /* CoreGraphics.framework */; };
+		F258E66AB357C766A9DB015CD298E52C /* NSString+BDBOAuth1Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F76EEAA7A37D4C735650F87D50DF72D /* NSString+BDBOAuth1Manager.m */; };
+		F4DB4A1211EE88900A8419AFB665CEBD /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0CEF26584634F85A0AC9ABCE47BB8B /* AFNetworking-dummy.m */; };
+		F6218CB647DDDC6E7EB97064150F9757 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 673BE62DCE9A70020BE391EA2F863003 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE9E8A0DBEE3A396F42322046431EBEB /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 246C8ED92D9B3AB016DE941336EC9C06 /* AFNetworkReachabilityManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AA6D1D9D4557685A1FA2A61D125E1C57 /* PBXContainerItemProxy */ = {
+		22CFBDB4BC1B0B8E0FA349BF589347F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
+			remoteInfo = AFNetworking;
+		};
+		79B09EB27948036238BA1A482999865B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 073980BAD136EF68A79753E38B945EFC;
+			remoteInfo = BDBOAuth1Manager;
+		};
+		AC95D2A2CFF04E280FA2004A0F58CAB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
+			remoteInfo = AFNetworking;
+		};
+		D64B4FC35EE74B19BEA62ACB28766542 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
+			remoteInfo = AFNetworking;
+		};
+		E91D76E4B654E91E877E4166C8FAA15B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 073980BAD136EF68A79753E38B945EFC;
+			remoteInfo = BDBOAuth1Manager;
+		};
+		FF77D72EF7A3E3947A836A26F5ACE3A0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -29,38 +94,104 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		006D3981BB77CA766422017F059EC612 /* Pods-blueit-blueitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-blueit-blueitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		00A94B5C710F9C56C761B754BAFC54BD /* Pods-blueit-blueitUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-blueit-blueitUITests"; path = Pods_blueit_blueitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		025F176A82618BF8C08E3A8BC559E637 /* Pods-blueit-blueitUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-blueit-blueitUITests-Info.plist"; sourceTree = "<group>"; };
-		03F4B9D2943851E2A469053FEE488AEB /* Pods-blueitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-blueitTests-Info.plist"; sourceTree = "<group>"; };
-		046CF1ED32B4E441558952BA8611EAB9 /* Pods-blueitTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-blueitTests-dummy.m"; sourceTree = "<group>"; };
-		047F88B1E308BB6E18B3A3A1614824E2 /* Pods-blueit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-blueit-acknowledgements.plist"; sourceTree = "<group>"; };
-		0D91DD89BB4F133D99D011DE92462CC7 /* Pods-blueit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-blueit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		01A882C911E9480A50D375F55105B94E /* BDBOAuth1Manager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BDBOAuth1Manager.release.xcconfig; sourceTree = "<group>"; };
+		029195ED6525D1785821C8DE56D484E8 /* Pods-blueit-blueitUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-blueit-blueitUITests-frameworks.sh"; sourceTree = "<group>"; };
+		064DA36DB23719011321F70F81288DCA /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		0AC9A6509B9A5939CC974D3834836E72 /* Pods-blueit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-blueit-dummy.m"; sourceTree = "<group>"; };
+		0DA76436621BD128E0EB979A74A6C819 /* Pods-blueit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-blueit-umbrella.h"; sourceTree = "<group>"; };
+		0EAA3F368C4039F6027346DFA18336CD /* Pods-blueit-blueitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-blueit-blueitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		104D33D9AAAC16FAC454B7BF2BBE251D /* Pods-blueitTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-blueitTests"; path = Pods_blueitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		11680CF5217D4476379A7B20AA6B0DFB /* Pods-blueitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-blueitTests.release.xcconfig"; sourceTree = "<group>"; };
-		304D0E396D427A0B7BD8BF773F795533 /* Pods-blueit-blueitUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-blueit-blueitUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		49A844D6BF92CFE95A3BBEC821A33FAA /* Pods-blueit-blueitUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-blueit-blueitUITests-umbrella.h"; sourceTree = "<group>"; };
-		507FBE4D55B526130BBE3816AE7487AB /* Pods-blueit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-blueit-umbrella.h"; sourceTree = "<group>"; };
-		515164CE0183A063F97429E2F9703EDC /* Pods-blueit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-blueit.modulemap"; sourceTree = "<group>"; };
+		16EE14084F86CF2FB66E291A28E5D728 /* NSDictionary+BDBOAuth1Manager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+BDBOAuth1Manager.m"; path = "BDBOAuth1Manager/Categories/NSDictionary+BDBOAuth1Manager.m"; sourceTree = "<group>"; };
+		184765213831524EBBA56491EADF44BB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		201B0526549FB5C6DDB6147F395CB89D /* AFNetworking-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AFNetworking-Info.plist"; sourceTree = "<group>"; };
+		207A32F71153D0F9168502DDEC63905E /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		246C8ED92D9B3AB016DE941336EC9C06 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		264A244C48CC583D2F77792B5DF5467F /* BDBOAuth1Manager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BDBOAuth1Manager-prefix.pch"; sourceTree = "<group>"; };
+		2673C5FB80447BC189440D075FAC93A0 /* Pods-blueit-blueitUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-blueit-blueitUITests-dummy.m"; sourceTree = "<group>"; };
+		271DF4BC34EC44DBD711E6E846605578 /* AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-umbrella.h"; sourceTree = "<group>"; };
+		2D409645D088AB9189F3E7CD44A1CCFA /* BDBOAuth1Manager */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BDBOAuth1Manager; path = BDBOAuth1Manager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F76EEAA7A37D4C735650F87D50DF72D /* NSString+BDBOAuth1Manager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+BDBOAuth1Manager.m"; path = "BDBOAuth1Manager/Categories/NSString+BDBOAuth1Manager.m"; sourceTree = "<group>"; };
+		32B80C76A5E052A88D325D41A00B8DDA /* BDBOAuth1SessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BDBOAuth1SessionManager.h; path = BDBOAuth1Manager/BDBOAuth1SessionManager.h; sourceTree = "<group>"; };
+		32DD4D83B5EC16AAC8B461274BECDC4D /* BDBOAuth1SessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BDBOAuth1SessionManager.m; path = BDBOAuth1Manager/BDBOAuth1SessionManager.m; sourceTree = "<group>"; };
+		3822DDFCDB3EFB66E8B2CD01ADFB8545 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		3925351BB403F49146F5FAC868BB3D5B /* BDBOAuth1Manager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BDBOAuth1Manager-Info.plist"; sourceTree = "<group>"; };
+		3C5D1A16EFB9C6323E3DF8537110709F /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		403BFCCA34C295B1A223ADAB18C42BE9 /* Pods-blueit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-blueit.modulemap"; sourceTree = "<group>"; };
+		430B0D9F4A81363178201CB5A9622C6B /* Pods-blueit-blueitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-blueit-blueitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		45CA7540738DD80BE05B3A4DC6A7BD73 /* Pods-blueitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-blueitTests.release.xcconfig"; sourceTree = "<group>"; };
+		47828B888F125F26C0D279A4037C5051 /* Pods-blueitTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-blueitTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		50E9DA38AA2565372A5C5DEE68239B40 /* BDBOAuth1RequestSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BDBOAuth1RequestSerializer.h; path = BDBOAuth1Manager/BDBOAuth1RequestSerializer.h; sourceTree = "<group>"; };
+		5392FF05D25DCE0FAA989FAA0155634B /* Pods-blueit-blueitUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-blueit-blueitUITests.modulemap"; sourceTree = "<group>"; };
+		54979FE99886E2261D1245A5DCF2CA75 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		59CE182290DD45C01CAA82858909E27C /* AFNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.debug.xcconfig; sourceTree = "<group>"; };
+		61F7BA52D0DAD0DE6D6938B1CBF80D47 /* AFNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.release.xcconfig; sourceTree = "<group>"; };
+		62088E97BDCB2360F281CA007CAB2D4F /* Pods-blueit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-blueit-Info.plist"; sourceTree = "<group>"; };
+		63122780D89C6687BB7D39F94DB449E7 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		673BE62DCE9A70020BE391EA2F863003 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
 		6B8F379F6CF05F9FE3B3FF374C364CE7 /* Pods-blueit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-blueit"; path = Pods_blueit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7227DF8FEB28C12D8F696697EB94EFB1 /* Pods-blueitTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-blueitTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7537D784CD03A1090E5193D03750E11A /* Pods-blueit-blueitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-blueit-blueitUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		844CDF0B4028C50F8E1EC3B18F442792 /* Pods-blueitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-blueitTests.debug.xcconfig"; sourceTree = "<group>"; };
-		88705E76351FF706BCEC53AD29C8918F /* Pods-blueit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-blueit-dummy.m"; sourceTree = "<group>"; };
-		91ADE7B64A910005EF3B2C6A76C0D3CB /* Pods-blueit-blueitUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-blueit-blueitUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		73B0419F87A7746D7B6457B5C5E5E615 /* Pods-blueit-blueitUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-blueit-blueitUITests-umbrella.h"; sourceTree = "<group>"; };
+		78E7B7C6574D0E8569766AC20F2E250E /* Pods-blueit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-blueit.release.xcconfig"; sourceTree = "<group>"; };
+		7D39719745A28450AE90B37EF962E7C3 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		7D57E6BB4E5639B8A09887A2A644A9EA /* BDBOAuth1Manager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BDBOAuth1Manager.modulemap; sourceTree = "<group>"; };
+		7E3BA57807F516B4EE06C423E4998D64 /* Pods-blueit-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-blueit-frameworks.sh"; sourceTree = "<group>"; };
+		81C582146110CBACF329E3AF5E3541D2 /* BDBOAuth1RequestSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BDBOAuth1RequestSerializer.m; path = BDBOAuth1Manager/BDBOAuth1RequestSerializer.m; sourceTree = "<group>"; };
+		8350691E30AEAE363E264A47943A3008 /* Pods-blueit-blueitUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-blueit-blueitUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		83BD052A579739CF222ED22AD56A72D3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		84FE6786284A237C65D7ABD8A27B43A6 /* Pods-blueit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-blueit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		894B54DA06733FD730C8E2E26B228654 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		89A1B717037EB140EFD5A4E71F661799 /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AFNetworking.modulemap; sourceTree = "<group>"; };
+		8D11162C98BE35D027B4C8FD3692B027 /* NSDictionary+BDBOAuth1Manager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+BDBOAuth1Manager.h"; path = "BDBOAuth1Manager/Categories/NSDictionary+BDBOAuth1Manager.h"; sourceTree = "<group>"; };
+		8E967AEBE7ECB37E177E28FB6FAD7509 /* NSString+BDBOAuth1Manager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+BDBOAuth1Manager.h"; path = "BDBOAuth1Manager/Categories/NSString+BDBOAuth1Manager.h"; sourceTree = "<group>"; };
+		925898C9F489BE182A526CC93FA132E8 /* Pods-blueitTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-blueitTests-umbrella.h"; sourceTree = "<group>"; };
+		98BB627936995ED38ED1DBFF599BE48B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		ABC181C343083664C1E1003C07FDC360 /* Pods-blueitTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-blueitTests.modulemap"; sourceTree = "<group>"; };
-		ACF6ABB7EDAFB21D8427947AC9F18BC2 /* Pods-blueitTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-blueitTests-umbrella.h"; sourceTree = "<group>"; };
-		ADBA7AAC7762EADB443FB4EDF266F1C4 /* Pods-blueit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-blueit.release.xcconfig"; sourceTree = "<group>"; };
-		BE696ED127E02817DCEB16AABA42A210 /* Pods-blueitTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-blueitTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CF06F3A87439E507BFB0D0E92AD57B7E /* Pods-blueit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-blueit.debug.xcconfig"; sourceTree = "<group>"; };
-		D2EF47FCA877FF8F67324715080CBE89 /* Pods-blueit-blueitUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-blueit-blueitUITests.modulemap"; sourceTree = "<group>"; };
-		DB8AE5CE88C3DB90318546CD3A0ECC05 /* Pods-blueit-blueitUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-blueit-blueitUITests-dummy.m"; sourceTree = "<group>"; };
-		E8FD5962153AD7D243A0B1169747BB3D /* Pods-blueit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-blueit-Info.plist"; sourceTree = "<group>"; };
+		9F5BC6BDE5990EDE172879F5E320D73C /* BDBOAuth1Manager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BDBOAuth1Manager-dummy.m"; sourceTree = "<group>"; };
+		A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6AE9FBBDB5ACFBBFDD4B23647EEEDCE /* Pods-blueit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-blueit.debug.xcconfig"; sourceTree = "<group>"; };
+		AA810FA09EE3B4F2A5C2A7EB398F6AF5 /* Pods-blueitTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-blueitTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AD5FA02C3DD189A826DFDB62A69B2A2B /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		ADC5A056727F16AC6CC956180C7DCBC8 /* Pods-blueitTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-blueitTests.modulemap"; sourceTree = "<group>"; };
+		AF574BA3A9EE4BDB2A2D408E735AAB8F /* Pods-blueit-blueitUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-blueit-blueitUITests-Info.plist"; sourceTree = "<group>"; };
+		C84356B67A97182915646C9708A7F6AE /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		CEC35F695352625EA3A8177A76F3FAEE /* BDBOAuth1Manager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BDBOAuth1Manager-umbrella.h"; sourceTree = "<group>"; };
+		D6FE67531F0269BC5B367F891C4EA34E /* BDBOAuth1Manager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BDBOAuth1Manager.debug.xcconfig; sourceTree = "<group>"; };
+		D84C72998FCF829DC1AD028A5C39367C /* Pods-blueitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-blueitTests-Info.plist"; sourceTree = "<group>"; };
+		DDD797D25089E2F3B4D72A37846DF16F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		DF032CBA6703F10AA4B2292B37246C03 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		E6EA2CBAD36384AD7A0C34B378E56790 /* Pods-blueitTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-blueitTests-dummy.m"; sourceTree = "<group>"; };
+		E9A139A3C3A8436A9B137C13F16A5434 /* Pods-blueit-blueitUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-blueit-blueitUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F08FBBBCC9C92824A43A84F36A372FB3 /* Pods-blueit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-blueit-acknowledgements.plist"; sourceTree = "<group>"; };
+		F215D6C11FEE074A304695947745AE8E /* Pods-blueitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-blueitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FD0CEF26584634F85A0AC9ABCE47BB8B /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		FD260B631C8D511DD945E1DE2063FACD /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1E1A3662EED1344B9512A964BB55A73F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B5A87AA44B6191FC13EB6F80AFA67B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		399CEBD46B21220F8C313D8980EB32A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5FDF80522D54236D3FC98F281847EE6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C4424D9E7DC79CF5C0CC3C9E9F3D13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CB41B12ABD94ACD151D0CF91B7E9405 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6BDFC1255E9F4B3C6321B61557B05E81 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,117 +200,231 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		77E4015265CD2D40EE9B85A817C1A822 /* Frameworks */ = {
+		D8D6F4CC5745EABBFA597DEFE9806C48 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF8EB364F3812A15EA74BD894A90F3CC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F6444D51042BB0A91CD92816517A8E33 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B6DBFEB98F0D2F0ECCAFE7E89EB17A9F /* Foundation.framework in Frameworks */,
+				EA66AE0C38E25C85D83176BA240E153C /* CoreGraphics.framework in Frameworks */,
+				26E213E53609F288A3A0AD8FC1109A26 /* Foundation.framework in Frameworks */,
+				DE472D2B5F5072D5DA7DA593EC15F526 /* MobileCoreServices.framework in Frameworks */,
+				63CA6CB5268DFEA6D88091D7466DA33A /* Security.framework in Frameworks */,
+				09BE858876FA16410D7EE9FB86DEFFCC /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		000CB4F2AF8251FBE309EE610D499C11 /* Targets Support Files */ = {
+		15A654EEDCE267D934E68CBB75F3ADFB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA284B3A6DCEB24EDF53BF343F707BD1 /* Pods-blueit */,
-				87E9F369CD983418CD571A9D43B1B62A /* Pods-blueit-blueitUITests */,
-				2EDC3B717663BDFFB23D8122E97C96E2 /* Pods-blueitTests */,
+				A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking */,
+				2D409645D088AB9189F3E7CD44A1CCFA /* BDBOAuth1Manager */,
+				6B8F379F6CF05F9FE3B3FF374C364CE7 /* Pods-blueit */,
+				00A94B5C710F9C56C761B754BAFC54BD /* Pods-blueit-blueitUITests */,
+				104D33D9AAAC16FAC454B7BF2BBE251D /* Pods-blueitTests */,
 			);
-			name = "Targets Support Files";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		2EDC3B717663BDFFB23D8122E97C96E2 /* Pods-blueitTests */ = {
+		235F041C34907BACD96254FC56EAB1D0 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				ABC181C343083664C1E1003C07FDC360 /* Pods-blueitTests.modulemap */,
-				BE696ED127E02817DCEB16AABA42A210 /* Pods-blueitTests-acknowledgements.markdown */,
-				7227DF8FEB28C12D8F696697EB94EFB1 /* Pods-blueitTests-acknowledgements.plist */,
-				046CF1ED32B4E441558952BA8611EAB9 /* Pods-blueitTests-dummy.m */,
-				03F4B9D2943851E2A469053FEE488AEB /* Pods-blueitTests-Info.plist */,
-				ACF6ABB7EDAFB21D8427947AC9F18BC2 /* Pods-blueitTests-umbrella.h */,
-				844CDF0B4028C50F8E1EC3B18F442792 /* Pods-blueitTests.debug.xcconfig */,
-				11680CF5217D4476379A7B20AA6B0DFB /* Pods-blueitTests.release.xcconfig */,
-			);
-			name = "Pods-blueitTests";
-			path = "Target Support Files/Pods-blueitTests";
-			sourceTree = "<group>";
-		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				DDD797D25089E2F3B4D72A37846DF16F /* CoreGraphics.framework */,
+				894B54DA06733FD730C8E2E26B228654 /* Foundation.framework */,
+				184765213831524EBBA56491EADF44BB /* MobileCoreServices.framework */,
+				98BB627936995ED38ED1DBFF599BE48B /* Security.framework */,
+				83BD052A579739CF222ED22AD56A72D3 /* SystemConfiguration.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		87E9F369CD983418CD571A9D43B1B62A /* Pods-blueit-blueitUITests */ = {
+		5384D0D6BB0B807DFBC59FF4056413E8 /* BDBOAuth1Manager */ = {
 			isa = PBXGroup;
 			children = (
-				D2EF47FCA877FF8F67324715080CBE89 /* Pods-blueit-blueitUITests.modulemap */,
-				304D0E396D427A0B7BD8BF773F795533 /* Pods-blueit-blueitUITests-acknowledgements.markdown */,
-				91ADE7B64A910005EF3B2C6A76C0D3CB /* Pods-blueit-blueitUITests-acknowledgements.plist */,
-				DB8AE5CE88C3DB90318546CD3A0ECC05 /* Pods-blueit-blueitUITests-dummy.m */,
-				025F176A82618BF8C08E3A8BC559E637 /* Pods-blueit-blueitUITests-Info.plist */,
-				49A844D6BF92CFE95A3BBEC821A33FAA /* Pods-blueit-blueitUITests-umbrella.h */,
-				7537D784CD03A1090E5193D03750E11A /* Pods-blueit-blueitUITests.debug.xcconfig */,
-				006D3981BB77CA766422017F059EC612 /* Pods-blueit-blueitUITests.release.xcconfig */,
+				50E9DA38AA2565372A5C5DEE68239B40 /* BDBOAuth1RequestSerializer.h */,
+				81C582146110CBACF329E3AF5E3541D2 /* BDBOAuth1RequestSerializer.m */,
+				32B80C76A5E052A88D325D41A00B8DDA /* BDBOAuth1SessionManager.h */,
+				32DD4D83B5EC16AAC8B461274BECDC4D /* BDBOAuth1SessionManager.m */,
+				8D11162C98BE35D027B4C8FD3692B027 /* NSDictionary+BDBOAuth1Manager.h */,
+				16EE14084F86CF2FB66E291A28E5D728 /* NSDictionary+BDBOAuth1Manager.m */,
+				8E967AEBE7ECB37E177E28FB6FAD7509 /* NSString+BDBOAuth1Manager.h */,
+				2F76EEAA7A37D4C735650F87D50DF72D /* NSString+BDBOAuth1Manager.m */,
+				FB54ED192852C06D54A4FCCACC2B1B9B /* Support Files */,
+			);
+			name = BDBOAuth1Manager;
+			path = BDBOAuth1Manager;
+			sourceTree = "<group>";
+		};
+		554A93C86472B6B608676F905020838A /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				673BE62DCE9A70020BE391EA2F863003 /* AFNetworkReachabilityManager.h */,
+				246C8ED92D9B3AB016DE941336EC9C06 /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		5CBE9F3E531D144184ACF7EB787FAC00 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F50052D41635DBF5974711D1129BCDD1 /* Pods-blueit */,
+				71724E208833870E5827BC76BB334275 /* Pods-blueit-blueitUITests */,
+				F75F5C48BC36DD98C764936BFD50F20C /* Pods-blueitTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		619EA927209B8BE542663BF632F60476 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC9637ED9F92034EEB97927AA3E980C8 /* AFNetworking */,
+				5384D0D6BB0B807DFBC59FF4056413E8 /* BDBOAuth1Manager */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		71724E208833870E5827BC76BB334275 /* Pods-blueit-blueitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5392FF05D25DCE0FAA989FAA0155634B /* Pods-blueit-blueitUITests.modulemap */,
+				E9A139A3C3A8436A9B137C13F16A5434 /* Pods-blueit-blueitUITests-acknowledgements.markdown */,
+				8350691E30AEAE363E264A47943A3008 /* Pods-blueit-blueitUITests-acknowledgements.plist */,
+				2673C5FB80447BC189440D075FAC93A0 /* Pods-blueit-blueitUITests-dummy.m */,
+				029195ED6525D1785821C8DE56D484E8 /* Pods-blueit-blueitUITests-frameworks.sh */,
+				AF574BA3A9EE4BDB2A2D408E735AAB8F /* Pods-blueit-blueitUITests-Info.plist */,
+				73B0419F87A7746D7B6457B5C5E5E615 /* Pods-blueit-blueitUITests-umbrella.h */,
+				430B0D9F4A81363178201CB5A9622C6B /* Pods-blueit-blueitUITests.debug.xcconfig */,
+				0EAA3F368C4039F6027346DFA18336CD /* Pods-blueit-blueitUITests.release.xcconfig */,
 			);
 			name = "Pods-blueit-blueitUITests";
 			path = "Target Support Files/Pods-blueit-blueitUITests";
 			sourceTree = "<group>";
 		};
-		AA284B3A6DCEB24EDF53BF343F707BD1 /* Pods-blueit */ = {
+		AC9637ED9F92034EEB97927AA3E980C8 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				515164CE0183A063F97429E2F9703EDC /* Pods-blueit.modulemap */,
-				0D91DD89BB4F133D99D011DE92462CC7 /* Pods-blueit-acknowledgements.markdown */,
-				047F88B1E308BB6E18B3A3A1614824E2 /* Pods-blueit-acknowledgements.plist */,
-				88705E76351FF706BCEC53AD29C8918F /* Pods-blueit-dummy.m */,
-				E8FD5962153AD7D243A0B1169747BB3D /* Pods-blueit-Info.plist */,
-				507FBE4D55B526130BBE3816AE7487AB /* Pods-blueit-umbrella.h */,
-				CF06F3A87439E507BFB0D0E92AD57B7E /* Pods-blueit.debug.xcconfig */,
-				ADBA7AAC7762EADB443FB4EDF266F1C4 /* Pods-blueit.release.xcconfig */,
+				F05FB63E4F04ED891070E9043C947AFB /* NSURLSession */,
+				554A93C86472B6B608676F905020838A /* Reachability */,
+				E0204617E4D6684F1098891D0EDFFAC6 /* Security */,
+				EC49AA3DE8435D42A57E9D3154D1EF7B /* Serialization */,
+				C34CA2CFC901233C764461AE0F93CE63 /* Support Files */,
 			);
-			name = "Pods-blueit";
-			path = "Target Support Files/Pods-blueit";
+			name = AFNetworking;
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		B94D7768568A9992200DB461E8CF687F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				235F041C34907BACD96254FC56EAB1D0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C34CA2CFC901233C764461AE0F93CE63 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				89A1B717037EB140EFD5A4E71F661799 /* AFNetworking.modulemap */,
+				FD0CEF26584634F85A0AC9ABCE47BB8B /* AFNetworking-dummy.m */,
+				201B0526549FB5C6DDB6147F395CB89D /* AFNetworking-Info.plist */,
+				3C5D1A16EFB9C6323E3DF8537110709F /* AFNetworking-prefix.pch */,
+				271DF4BC34EC44DBD711E6E846605578 /* AFNetworking-umbrella.h */,
+				59CE182290DD45C01CAA82858909E27C /* AFNetworking.debug.xcconfig */,
+				61F7BA52D0DAD0DE6D6938B1CBF80D47 /* AFNetworking.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				E98C8C21882CCEB9E6F9F2D10B13E1D2 /* Products */,
-				000CB4F2AF8251FBE309EE610D499C11 /* Targets Support Files */,
+				B94D7768568A9992200DB461E8CF687F /* Frameworks */,
+				619EA927209B8BE542663BF632F60476 /* Pods */,
+				15A654EEDCE267D934E68CBB75F3ADFB /* Products */,
+				5CBE9F3E531D144184ACF7EB787FAC00 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		E0204617E4D6684F1098891D0EDFFAC6 /* Security */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				207A32F71153D0F9168502DDEC63905E /* AFSecurityPolicy.h */,
+				7D39719745A28450AE90B37EF962E7C3 /* AFSecurityPolicy.m */,
 			);
-			name = Frameworks;
+			name = Security;
 			sourceTree = "<group>";
 		};
-		E98C8C21882CCEB9E6F9F2D10B13E1D2 /* Products */ = {
+		EC49AA3DE8435D42A57E9D3154D1EF7B /* Serialization */ = {
 			isa = PBXGroup;
 			children = (
-				6B8F379F6CF05F9FE3B3FF374C364CE7 /* Pods-blueit */,
-				00A94B5C710F9C56C761B754BAFC54BD /* Pods-blueit-blueitUITests */,
-				104D33D9AAAC16FAC454B7BF2BBE251D /* Pods-blueitTests */,
+				C84356B67A97182915646C9708A7F6AE /* AFURLRequestSerialization.h */,
+				AD5FA02C3DD189A826DFDB62A69B2A2B /* AFURLRequestSerialization.m */,
+				63122780D89C6687BB7D39F94DB449E7 /* AFURLResponseSerialization.h */,
+				DF032CBA6703F10AA4B2292B37246C03 /* AFURLResponseSerialization.m */,
 			);
-			name = Products;
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		F05FB63E4F04ED891070E9043C947AFB /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				54979FE99886E2261D1245A5DCF2CA75 /* AFHTTPSessionManager.h */,
+				064DA36DB23719011321F70F81288DCA /* AFHTTPSessionManager.m */,
+				FD260B631C8D511DD945E1DE2063FACD /* AFURLSessionManager.h */,
+				3822DDFCDB3EFB66E8B2CD01ADFB8545 /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		F50052D41635DBF5974711D1129BCDD1 /* Pods-blueit */ = {
+			isa = PBXGroup;
+			children = (
+				403BFCCA34C295B1A223ADAB18C42BE9 /* Pods-blueit.modulemap */,
+				84FE6786284A237C65D7ABD8A27B43A6 /* Pods-blueit-acknowledgements.markdown */,
+				F08FBBBCC9C92824A43A84F36A372FB3 /* Pods-blueit-acknowledgements.plist */,
+				0AC9A6509B9A5939CC974D3834836E72 /* Pods-blueit-dummy.m */,
+				7E3BA57807F516B4EE06C423E4998D64 /* Pods-blueit-frameworks.sh */,
+				62088E97BDCB2360F281CA007CAB2D4F /* Pods-blueit-Info.plist */,
+				0DA76436621BD128E0EB979A74A6C819 /* Pods-blueit-umbrella.h */,
+				A6AE9FBBDB5ACFBBFDD4B23647EEEDCE /* Pods-blueit.debug.xcconfig */,
+				78E7B7C6574D0E8569766AC20F2E250E /* Pods-blueit.release.xcconfig */,
+			);
+			name = "Pods-blueit";
+			path = "Target Support Files/Pods-blueit";
+			sourceTree = "<group>";
+		};
+		F75F5C48BC36DD98C764936BFD50F20C /* Pods-blueitTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5A056727F16AC6CC956180C7DCBC8 /* Pods-blueitTests.modulemap */,
+				47828B888F125F26C0D279A4037C5051 /* Pods-blueitTests-acknowledgements.markdown */,
+				AA810FA09EE3B4F2A5C2A7EB398F6AF5 /* Pods-blueitTests-acknowledgements.plist */,
+				E6EA2CBAD36384AD7A0C34B378E56790 /* Pods-blueitTests-dummy.m */,
+				D84C72998FCF829DC1AD028A5C39367C /* Pods-blueitTests-Info.plist */,
+				925898C9F489BE182A526CC93FA132E8 /* Pods-blueitTests-umbrella.h */,
+				F215D6C11FEE074A304695947745AE8E /* Pods-blueitTests.debug.xcconfig */,
+				45CA7540738DD80BE05B3A4DC6A7BD73 /* Pods-blueitTests.release.xcconfig */,
+			);
+			name = "Pods-blueitTests";
+			path = "Target Support Files/Pods-blueitTests";
+			sourceTree = "<group>";
+		};
+		FB54ED192852C06D54A4FCCACC2B1B9B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D57E6BB4E5639B8A09887A2A644A9EA /* BDBOAuth1Manager.modulemap */,
+				9F5BC6BDE5990EDE172879F5E320D73C /* BDBOAuth1Manager-dummy.m */,
+				3925351BB403F49146F5FAC868BB3D5B /* BDBOAuth1Manager-Info.plist */,
+				264A244C48CC583D2F77792B5DF5467F /* BDBOAuth1Manager-prefix.pch */,
+				CEC35F695352625EA3A8177A76F3FAEE /* BDBOAuth1Manager-umbrella.h */,
+				D6FE67531F0269BC5B367F891C4EA34E /* BDBOAuth1Manager.debug.xcconfig */,
+				01A882C911E9480A50D375F55105B94E /* BDBOAuth1Manager.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BDBOAuth1Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,37 +438,102 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8CECE99721DADB88CB73E5D16EBDB919 /* Headers */ = {
+		4CFA4776AE6D2F98178B9FBAD220E5A9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1A01C71AE177DAD8AF869872BD3D5D2 /* Pods-blueit-blueitUITests-umbrella.h in Headers */,
+				C762C65F80FB573DC93D5BB43ECCBFD5 /* BDBOAuth1Manager-umbrella.h in Headers */,
+				C58F682075299264D247E759488F6FB5 /* BDBOAuth1RequestSerializer.h in Headers */,
+				040842DBECE66E60291D1F4AA544202A /* BDBOAuth1SessionManager.h in Headers */,
+				D193E7520993BAFF98A439E8DF89EA59 /* NSDictionary+BDBOAuth1Manager.h in Headers */,
+				CFE95272F76DF03BADA5560A915DF7CB /* NSString+BDBOAuth1Manager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F05C5B035BFB3EDEE31E35175B5581E2 /* Headers */ = {
+		A942AB5BAF03029C76FBFE017FBE1224 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DC402E6BFF29D1F210C924F9029D3D0 /* Pods-blueit-umbrella.h in Headers */,
+				23AAF2BC52E40636E1434F6819E929FD /* Pods-blueit-blueitUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0B8CA28741F8DBFFD3AF9B232ACAC3E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				822D94880C994540D0DDD562F974A34B /* AFHTTPSessionManager.h in Headers */,
+				1B5D786D6C4EE9CD24B83797BC667753 /* AFNetworking-umbrella.h in Headers */,
+				F6218CB647DDDC6E7EB97064150F9757 /* AFNetworkReachabilityManager.h in Headers */,
+				1D6914434AECC7A2A2D5AEA24464241A /* AFSecurityPolicy.h in Headers */,
+				B52A260053426F6341DB6CB66AD01992 /* AFURLRequestSerialization.h in Headers */,
+				2F9D343FB9FC774014144AF2E8717BA2 /* AFURLResponseSerialization.h in Headers */,
+				DAB425139E181BE6DD4797ABDCAC08D1 /* AFURLSessionManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEC155ADBDCB8163D2D9C75C49484AE7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88699EF07D6C7AEE4D9D68C177BBC482 /* Pods-blueit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		12E21005BB283F8C49C5678D73D8661B /* Pods-blueit */ = {
+		0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0DFDE9343B7879F9FE7A82E45413F8C8 /* Build configuration list for PBXNativeTarget "Pods-blueit" */;
+			buildConfigurationList = E881AF7983B56DD77BAB1A499222A105 /* Build configuration list for PBXNativeTarget "AFNetworking" */;
 			buildPhases = (
-				F05C5B035BFB3EDEE31E35175B5581E2 /* Headers */,
-				36F9792A8AA294E5FA4DD414F82684C4 /* Sources */,
-				77E4015265CD2D40EE9B85A817C1A822 /* Frameworks */,
-				7B2B77FE07B0799023164D0FF7EB8DA9 /* Resources */,
+				C0B8CA28741F8DBFFD3AF9B232ACAC3E /* Headers */,
+				C7CAC038A9D32EE3CC0EBCB74EA8A8F9 /* Sources */,
+				D8D6F4CC5745EABBFA597DEFE9806C48 /* Frameworks */,
+				FCB07F09B09EBB100B1878F5292ACCC9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = AFNetworking;
+			productName = AFNetworking;
+			productReference = A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking */;
+			productType = "com.apple.product-type.framework";
+		};
+		073980BAD136EF68A79753E38B945EFC /* BDBOAuth1Manager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 647E6209C2E38411864057C0B32D78F6 /* Build configuration list for PBXNativeTarget "BDBOAuth1Manager" */;
+			buildPhases = (
+				4CFA4776AE6D2F98178B9FBAD220E5A9 /* Headers */,
+				1251F1CB121C79145363305975CA93AB /* Sources */,
+				55C4424D9E7DC79CF5C0CC3C9E9F3D13 /* Frameworks */,
+				CE27C064C77480177ED2343D5A363E31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC5B224127386818BEC3C4DAD7858C0A /* PBXTargetDependency */,
+			);
+			name = BDBOAuth1Manager;
+			productName = BDBOAuth1Manager;
+			productReference = 2D409645D088AB9189F3E7CD44A1CCFA /* BDBOAuth1Manager */;
+			productType = "com.apple.product-type.framework";
+		};
+		12E21005BB283F8C49C5678D73D8661B /* Pods-blueit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C933231A32A609554D76CE815C985FF4 /* Build configuration list for PBXNativeTarget "Pods-blueit" */;
+			buildPhases = (
+				DEC155ADBDCB8163D2D9C75C49484AE7 /* Headers */,
+				6C8DC1A8340F5270B61C7CA46086505F /* Sources */,
+				1E1A3662EED1344B9512A964BB55A73F /* Frameworks */,
+				DC0F2FD354A15039D5E59B01B638DF93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4215DEA06F5592704E3187FDDB7CBFCF /* PBXTargetDependency */,
+				6B3994988392C0B18F7161D11030B0DB /* PBXTargetDependency */,
 			);
 			name = "Pods-blueit";
 			productName = Pods_blueit;
@@ -232,16 +542,18 @@
 		};
 		63B8ED5A28814F9495F0F7114000610F /* Pods-blueit-blueitUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3043C5D298935BC4EAF47F711B0D8F37 /* Build configuration list for PBXNativeTarget "Pods-blueit-blueitUITests" */;
+			buildConfigurationList = F354F96E2B3AF52E9E01F29C3D4D266C /* Build configuration list for PBXNativeTarget "Pods-blueit-blueitUITests" */;
 			buildPhases = (
-				8CECE99721DADB88CB73E5D16EBDB919 /* Headers */,
-				775C7B3F44F1088665745761EFABD992 /* Sources */,
-				F6444D51042BB0A91CD92816517A8E33 /* Frameworks */,
-				6E53DC956299103752274DD8F24AA00A /* Resources */,
+				A942AB5BAF03029C76FBFE017FBE1224 /* Headers */,
+				2345B0D0AB433D8A4EFEC5D6D903D856 /* Sources */,
+				399CEBD46B21220F8C313D8980EB32A0 /* Frameworks */,
+				65F36C08D0E810A378963558AB7AD506 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				505B6753A68D6C3F8B4AA49A015A3210 /* PBXTargetDependency */,
+				5EFA34D38D22E295CDFA596FE6B2D15C /* PBXTargetDependency */,
 			);
 			name = "Pods-blueit-blueitUITests";
 			productName = Pods_blueit_blueitUITests;
@@ -260,7 +572,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				16589C4220B638E870F2D3A63F49BD26 /* PBXTargetDependency */,
+				2A68481E23F60C20A046DFC1D5BEF987 /* PBXTargetDependency */,
 			);
 			name = "Pods-blueitTests";
 			productName = Pods_blueitTests;
@@ -285,10 +597,12 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = E98C8C21882CCEB9E6F9F2D10B13E1D2 /* Products */;
+			productRefGroup = 15A654EEDCE267D934E68CBB75F3ADFB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */,
+				073980BAD136EF68A79753E38B945EFC /* BDBOAuth1Manager */,
 				12E21005BB283F8C49C5678D73D8661B /* Pods-blueit */,
 				63B8ED5A28814F9495F0F7114000610F /* Pods-blueit-blueitUITests */,
 				80084ECAB5F183A6FC686DFC855AE957 /* Pods-blueitTests */,
@@ -304,14 +618,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E53DC956299103752274DD8F24AA00A /* Resources */ = {
+		65F36C08D0E810A378963558AB7AD506 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B2B77FE07B0799023164D0FF7EB8DA9 /* Resources */ = {
+		CE27C064C77480177ED2343D5A363E31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC0F2FD354A15039D5E59B01B638DF93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCB07F09B09EBB100B1878F5292ACCC9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,19 +649,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		36F9792A8AA294E5FA4DD414F82684C4 /* Sources */ = {
+		1251F1CB121C79145363305975CA93AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFB370CD3054E90F4297AE91DEE01FCB /* Pods-blueit-dummy.m in Sources */,
+				9F3E658BB146B3E15223C67B365B7700 /* BDBOAuth1Manager-dummy.m in Sources */,
+				206B07C611B8171962E2909C757FF5A7 /* BDBOAuth1RequestSerializer.m in Sources */,
+				0E75E370B23394B2A4ECC79AD1DDC4E7 /* BDBOAuth1SessionManager.m in Sources */,
+				13ED1E63A2C152A2D76C32EAF9BD338E /* NSDictionary+BDBOAuth1Manager.m in Sources */,
+				F258E66AB357C766A9DB015CD298E52C /* NSString+BDBOAuth1Manager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		775C7B3F44F1088665745761EFABD992 /* Sources */ = {
+		2345B0D0AB433D8A4EFEC5D6D903D856 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E2F3A39EED4EE899F70FF94905626C9 /* Pods-blueit-blueitUITests-dummy.m in Sources */,
+				E06F2382C8D9E9BD87DDD4447715006C /* Pods-blueit-blueitUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C8DC1A8340F5270B61C7CA46086505F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FD8C924ED2EF7831345B7FBE842AA47 /* Pods-blueit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7CAC038A9D32EE3CC0EBCB74EA8A8F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E882BD9E55DF1FBCE74BBEA5DFCC6A8D /* AFHTTPSessionManager.m in Sources */,
+				F4DB4A1211EE88900A8419AFB665CEBD /* AFNetworking-dummy.m in Sources */,
+				FE9E8A0DBEE3A396F42322046431EBEB /* AFNetworkReachabilityManager.m in Sources */,
+				159220507D69C101DF726D6F079E972F /* AFSecurityPolicy.m in Sources */,
+				89488A8524FF89D5EEAF6BE31C8B1E8A /* AFURLRequestSerialization.m in Sources */,
+				D8E08496D6E358C574382D3EDA5545C8 /* AFURLResponseSerialization.m in Sources */,
+				89E109ACF923E14103812A85F054F32C /* AFURLSessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,21 +702,49 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		16589C4220B638E870F2D3A63F49BD26 /* PBXTargetDependency */ = {
+		2A68481E23F60C20A046DFC1D5BEF987 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-blueit";
 			target = 12E21005BB283F8C49C5678D73D8661B /* Pods-blueit */;
-			targetProxy = AA6D1D9D4557685A1FA2A61D125E1C57 /* PBXContainerItemProxy */;
+			targetProxy = FF77D72EF7A3E3947A836A26F5ACE3A0 /* PBXContainerItemProxy */;
+		};
+		4215DEA06F5592704E3187FDDB7CBFCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
+			targetProxy = AC95D2A2CFF04E280FA2004A0F58CAB0 /* PBXContainerItemProxy */;
+		};
+		505B6753A68D6C3F8B4AA49A015A3210 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
+			targetProxy = 22CFBDB4BC1B0B8E0FA349BF589347F9 /* PBXContainerItemProxy */;
+		};
+		5EFA34D38D22E295CDFA596FE6B2D15C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BDBOAuth1Manager;
+			target = 073980BAD136EF68A79753E38B945EFC /* BDBOAuth1Manager */;
+			targetProxy = E91D76E4B654E91E877E4166C8FAA15B /* PBXContainerItemProxy */;
+		};
+		6B3994988392C0B18F7161D11030B0DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BDBOAuth1Manager;
+			target = 073980BAD136EF68A79753E38B945EFC /* BDBOAuth1Manager */;
+			targetProxy = 79B09EB27948036238BA1A482999865B /* PBXContainerItemProxy */;
+		};
+		BC5B224127386818BEC3C4DAD7858C0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
+			targetProxy = D64B4FC35EE74B19BEA62ACB28766542 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2490D47B82E9EABAA04F8CA9E70FD789 /* Release */ = {
+		07FBA98F8A8987397BA8A0518B859112 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 006D3981BB77CA766422017F059EC612 /* Pods-blueit-blueitUITests.release.xcconfig */;
+			baseConfigurationReference = 01A882C911E9480A50D375F55105B94E /* BDBOAuth1Manager.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -371,23 +753,57 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-blueit-blueitUITests/Pods-blueit-blueitUITests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/BDBOAuth1Manager/BDBOAuth1Manager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BDBOAuth1Manager/BDBOAuth1Manager-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-blueit-blueitUITests/Pods-blueit-blueitUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/BDBOAuth1Manager/BDBOAuth1Manager.modulemap";
+				PRODUCT_MODULE_NAME = BDBOAuth1Manager;
+				PRODUCT_NAME = BDBOAuth1Manager;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		103296120F18CFAD21E02216627C3837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61F7BA52D0DAD0DE6D6938B1CBF80D47 /* AFNetworking.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/AFNetworking-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
+				PRODUCT_MODULE_NAME = AFNetworking;
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -397,7 +813,7 @@
 		};
 		28498C2748CBEE31E49E448E3DF769E1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11680CF5217D4476379A7B20AA6B0DFB /* Pods-blueitTests.release.xcconfig */;
+			baseConfigurationReference = 45CA7540738DD80BE05B3A4DC6A7BD73 /* Pods-blueitTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -495,9 +911,84 @@
 			};
 			name = Release;
 		};
+		43ABDC50FD03F857E809BFD9D945A310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 430B0D9F4A81363178201CB5A9622C6B /* Pods-blueit-blueitUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-blueit-blueitUITests/Pods-blueit-blueitUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-blueit-blueitUITests/Pods-blueit-blueitUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4B33AA56E2F3D618D9259D6024397F40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EAA3F368C4039F6027346DFA18336CD /* Pods-blueit-blueitUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-blueit-blueitUITests/Pods-blueit-blueitUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-blueit-blueitUITests/Pods-blueit-blueitUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		6E1C099F8F8AB4A8D08B0C5B93202D8E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 844CDF0B4028C50F8E1EC3B18F442792 /* Pods-blueitTests.debug.xcconfig */;
+			baseConfigurationReference = F215D6C11FEE074A304695947745AE8E /* Pods-blueitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -532,9 +1023,43 @@
 			};
 			name = Debug;
 		};
-		7340F7302398137A2F291ECFE7F62CCD /* Release */ = {
+		839613CE79A44505052E5C92D5369C3B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADBA7AAC7762EADB443FB4EDF266F1C4 /* Pods-blueit.release.xcconfig */;
+			baseConfigurationReference = D6FE67531F0269BC5B367F891C4EA34E /* BDBOAuth1Manager.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BDBOAuth1Manager/BDBOAuth1Manager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BDBOAuth1Manager/BDBOAuth1Manager-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BDBOAuth1Manager/BDBOAuth1Manager.modulemap";
+				PRODUCT_MODULE_NAME = BDBOAuth1Manager;
+				PRODUCT_NAME = BDBOAuth1Manager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8C394E342AD82EE5AAB7065680ECA970 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78E7B7C6574D0E8569766AC20F2E250E /* Pods-blueit.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -570,12 +1095,10 @@
 			};
 			name = Release;
 		};
-		9AF8F462781447C31F95F5BBB731576E /* Debug */ = {
+		A87146C5A93E5B46C458877114666E27 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7537D784CD03A1090E5193D03750E11A /* Pods-blueit-blueitUITests.debug.xcconfig */;
+			baseConfigurationReference = 59CE182290DD45C01CAA82858909E27C /* AFNetworking.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -584,32 +1107,31 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-blueit-blueitUITests/Pods-blueit-blueitUITests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/AFNetworking-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-blueit-blueitUITests/Pods-blueit-blueitUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
+				PRODUCT_MODULE_NAME = AFNetworking;
+				PRODUCT_NAME = AFNetworking;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		E9398F45974EC6E276CB1BE182C96B98 /* Debug */ = {
+		D1BFC95DE882C6292FCDC658E76DEE17 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF06F3A87439E507BFB0D0E92AD57B7E /* Pods-blueit.debug.xcconfig */;
+			baseConfigurationReference = A6AE9FBBDB5ACFBBFDD4B23647EEEDCE /* Pods-blueit.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -713,24 +1235,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0DFDE9343B7879F9FE7A82E45413F8C8 /* Build configuration list for PBXNativeTarget "Pods-blueit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E9398F45974EC6E276CB1BE182C96B98 /* Debug */,
-				7340F7302398137A2F291ECFE7F62CCD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3043C5D298935BC4EAF47F711B0D8F37 /* Build configuration list for PBXNativeTarget "Pods-blueit-blueitUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9AF8F462781447C31F95F5BBB731576E /* Debug */,
-				2490D47B82E9EABAA04F8CA9E70FD789 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -740,11 +1244,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		647E6209C2E38411864057C0B32D78F6 /* Build configuration list for PBXNativeTarget "BDBOAuth1Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839613CE79A44505052E5C92D5369C3B /* Debug */,
+				07FBA98F8A8987397BA8A0518B859112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C933231A32A609554D76CE815C985FF4 /* Build configuration list for PBXNativeTarget "Pods-blueit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1BFC95DE882C6292FCDC658E76DEE17 /* Debug */,
+				8C394E342AD82EE5AAB7065680ECA970 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D7F46C13833B37AF2F6B296DBC3EE1C9 /* Build configuration list for PBXNativeTarget "Pods-blueitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6E1C099F8F8AB4A8D08B0C5B93202D8E /* Debug */,
 				28498C2748CBEE31E49E448E3DF769E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E881AF7983B56DD77BAB1A499222A105 /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A87146C5A93E5B46C458877114666E27 /* Debug */,
+				103296120F18CFAD21E02216627C3837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F354F96E2B3AF52E9E01F29C3D4D266C /* Build configuration list for PBXNativeTarget "Pods-blueit-blueitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43ABDC50FD03F857E809BFD9D945A310 /* Debug */,
+				4B33AA56E2F3D618D9259D6024397F40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
