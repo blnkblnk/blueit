@@ -58,8 +58,7 @@ class RedditAPICaller: NSObject {
             request.httpBody = requestBodyComponents.query?.data(using: .utf8)
             request.allHTTPHeaderFields = HEADERS
             request.setValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")
-            let session = URLSession.shared
-            let task = session.dataTask(with: request, completionHandler: { data, response, error -> Void in
+            let task = URLSession.shared.dataTask(with: request, completionHandler: { data, response, error -> Void in
                 //print(response!)
                 do {
                     let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, AnyObject>
@@ -75,7 +74,7 @@ class RedditAPICaller: NSObject {
 
             task.resume()
         } else {
-            print("[BRUH] error when retrieving auth code: " + (url.valueOf("code") ?? "missing error"))
+            print("[BRUH] error when retrieving auth code: " + (url.valueOf("error") ?? "missing error"))
         }
         
         
@@ -83,9 +82,49 @@ class RedditAPICaller: NSObject {
         return
     }
     
-    func bestPosts(limit: Int) {
-        //let params = ["limit": limit]
+    func get(endPoint: String, params: Dictionary<String, String>) async throws -> [Any]? {
+        if RedditAPICaller.sessionToken == nil {
+            print("[BRUH] attemped api call with no session token")
+            return nil
+        }
         
-        //var request = URLRequest(url: )
+        var queryItems: [URLQueryItem] = []
+        for i in params.keys {
+            queryItems.append(URLQueryItem(name: i, value: params[i]))
+        }
+        
+        var urlComps = URLComponents(string: OAUTH_ENDPOINT + endPoint)!
+        urlComps.queryItems = queryItems
+        var request = URLRequest(url: urlComps.url!)
+        
+        request.allHTTPHeaderFields = HEADERS
+        request.addValue("Bearer " + RedditAPICaller.sessionToken!, forHTTPHeaderField: "Authorization")
+        
+        let (data, _) = try await URLSession.shared.data(for: request)
+        var json = try JSONSerialization.jsonObject(with: data, options: []) as Any
+        
+        while json as? NSDictionary != nil {
+            if (json as! NSDictionary)["data"] != nil {
+                json = (json as! NSDictionary)["data"] as Any
+            } else if (json as! NSDictionary)["children"] != nil {
+                json = (json as! NSDictionary)["children"] as Any
+            } else {
+                break
+            }
+        }
+        
+        return json as! [Any]?
+    }
+    func getBestPosts(limit: Int) async throws -> [[String: Any]]? {
+        return try await self.get(endPoint: "/best", params: ["limit":String(limit)]) as? [[String: Any]]
+    }
+    
+    func getComments(articleId: String, limit: Int, depth: Int = 0, sort: String = "top") async throws -> [[String: Any]]? {
+        return try await self.get(endPoint: "/comments/"+articleId, params: [
+            "article":articleId,
+            "limit":String(limit),
+            "depth":String(depth),
+            "sort":sort
+        ]) as? [[String: Any]]
     }
 }

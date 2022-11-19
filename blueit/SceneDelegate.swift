@@ -9,18 +9,9 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
-    static let client = SceneDelegate()
     //this function is called when you get redirected from blueit:// (after the user authenticates their reddit account)
     func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
         RedditAPICaller.client.setSessionToken(openURLContexts: URLContexts)
-    }
-    
-    func goToFeed() {
-        print("1")
-        DispatchQueue.main.async {
-            self.window?.rootViewController?.performSegue(withIdentifier: "loginToHome", sender: nil)
-        }
-        print("2")
     }
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
