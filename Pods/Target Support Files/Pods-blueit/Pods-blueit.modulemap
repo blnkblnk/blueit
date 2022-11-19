@@ -1,0 +1,6 @@
+framework module Pods_blueit {
+  umbrella header "Pods-blueit-umbrella.h"
+
+  export *
+  module * { export * }
+}
