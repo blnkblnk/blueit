@@ -28,7 +28,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Login Using Reddit" cornerStyle="capsule">
+                                <buttonConfiguration key="configuration" style="plain" title="Login Using Reddit">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                     <color key="baseForegroundColor" red="0.035217953429999997" green="0.60642274439999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
@@ -49,7 +49,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="gk2-Fr-0yc" kind="show" identifier="loginToHome" id="MXi-So-7Zf"/>
+                        <segue destination="gk2-Fr-0yc" kind="presentation" identifier="loginToHome" modalPresentationStyle="fullScreen" id="MXi-So-7Zf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mQw-4q-V4h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -61,7 +61,7 @@
             <objects>
                 <viewController id="yX6-6N-11Y" customClass="FeedViewController" customModule="blueit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d9V-2A-uMl">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WQA-Cy-02I">
@@ -135,7 +135,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="jJc-8W-GE8"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gkl-So-hVg">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
