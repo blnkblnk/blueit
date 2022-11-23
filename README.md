@@ -30,7 +30,7 @@ In this project, we design a replication of the app named "Reddit" and implement
 
 * User will be able log create account and login (DONE)
 * Users are able to set their profile picture
-* User will be able to view trending posts
+* User will be able to view trending posts(done)
 * User will be able to view comments on posts
 * User will be able to post text, links, or images to “Subreddits”
 * User will be able to comment on posts
