@@ -65,7 +65,7 @@ class RedditAPICaller: NSObject {
                     RedditAPICaller.sessionToken = json["access_token"]! as? String
                     //go to feed if successful login
                     DispatchQueue.main.async {
-                        LoginViewController.client!.goToFeed()
+                        LoginViewController.client?.goToFeed()
                     }
                 } catch {
                     print("[BRUH] error serializing json data")

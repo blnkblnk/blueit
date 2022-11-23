@@ -15,6 +15,8 @@ class FeedViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
+    
+    
     override func viewDidAppear(_ animated: Bool) {
         print("API token = " + (RedditAPICaller.sessionToken ?? "nil"))
         Task {
