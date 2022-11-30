@@ -60,7 +60,13 @@ class HomeTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "feedCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "feedCell", for: indexPath) as! blueitTableViewCell
+        
+        cell.subreddit.text = "some subreddit"
+        cell.authorlabel.text = "some author"
+        cell.headLine.text = "some headline"
+        cell.content.text = "some content/text"
+        
         let post = RedditAPICaller.client.accessPost(post_list: posts, index: indexPath.row)
         
         
