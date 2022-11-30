@@ -202,4 +202,4 @@ Unit 11 Sprint
 
 Unit 12 Sprint
 
-<img src='https://github.com/XAlienAssassin/Twitter_Codepath_MedinaO/blob/main/Twitter.gif' title='Video Walkthrough' width=250 alt='Video Walkthrough' />
+<img src='https://github.com/blueit-for-reddit/blueit/blob/main/Reddit_Update.gif' title='Video Walkthrough' width=250 alt='Video Walkthrough' />
