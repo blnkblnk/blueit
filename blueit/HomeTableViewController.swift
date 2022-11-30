@@ -13,6 +13,10 @@ class HomeTableViewController: UITableViewController {
     var num_posts = 0
     var posts: [[String: Any]]? = nil
     
+    var blueitArray = [NSDictionary]()
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,7 +54,9 @@ class HomeTableViewController: UITableViewController {
             
         }
     }
-    
+    func loadfeed() {
+        //RedditAPICaller.client.accessPost(post_list: posts, index: int)
+    }
     
     @IBAction func onLogout(_ sender: Any) {
         
