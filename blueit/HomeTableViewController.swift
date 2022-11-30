@@ -7,22 +7,28 @@
 
 import UIKit
 
-let debug = true
+let debug = false
 
 class HomeTableViewController: UITableViewController {
-
+    var num_posts = 0
+    var posts: [[String: Any]]? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        if !debug {
-            return
-        }
+        
         print("API token = " + (RedditAPICaller.sessionToken ?? "nil"))
         Task {
             //TODO: Either fix this crap or put it into a function
             //RedditAPICaller.client.getBestPosts(limit: Int)
             //gets two posts from the home page
             //returns some ungodly complex data structure
-            let posts = try await RedditAPICaller.client.getBestPosts(limit: 2)
+            posts = try await RedditAPICaller.client.getBestPosts(limit: 10)
+            num_posts = 10
+            self.tableView.reloadData()
+            
+            if !debug {
+                return
+            }
             //log posts
             print("=====POSTS=====")
             print(posts as Any)
@@ -41,6 +47,7 @@ class HomeTableViewController: UITableViewController {
             print("first post keys: ", first_post?.keys as Any)
             print("first post title: ", first_post?["title"] as Any)
             
+            
         }
     }
     
@@ -54,6 +61,11 @@ class HomeTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "feedCell", for: indexPath)
+        let post = RedditAPICaller.client.accessPost(post_list: posts, index: indexPath.row)
+        
+        
+        print("got imgurl \(post?["url_overridden_by_dest"] ?? "nil")")
+        
         return cell
     }
     
@@ -67,7 +79,8 @@ class HomeTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 6
+        
+        return num_posts
     }
 
 
