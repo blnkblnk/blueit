@@ -11,7 +11,6 @@
 		7882F8AEABDC26411E6A1DD1 /* Pods_blueit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F1DA806082E85CD10CA83E /* Pods_blueit.framework */; };
 		843C0C3C81E71F039AEA7D65 /* Pods_blueitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8118C6B82AC3C9C0A021FEEB /* Pods_blueitTests.framework */; };
 		9A300D892936E7F40007E38A /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A300D882936E7F40007E38A /* HomeTableViewController.swift */; };
-		9A762A12292DBD6A00CFBCC8 /* feedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A762A11292DBD6A00CFBCC8 /* feedTableViewController.swift */; };
 		A0FBB8DE292924CC009C3EEB /* RedditAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FBB8DD292924CB009C3EEB /* RedditAPICaller.swift */; };
 		D175100C291ADAB0002C1715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D175100B291ADAB0002C1715 /* AppDelegate.swift */; };
 		D175100E291ADAB0002C1715 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D175100D291ADAB0002C1715 /* SceneDelegate.swift */; };
@@ -22,7 +21,6 @@
 		D175102D291ADAB2002C1715 /* blueitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D175102C291ADAB2002C1715 /* blueitUITests.swift */; };
 		D175102F291ADAB2002C1715 /* blueitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D175102E291ADAB2002C1715 /* blueitUITestsLaunchTests.swift */; };
 		D1EE55B12924551D000FD81D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE55B02924551D000FD81D /* LoginViewController.swift */; };
-		D1EE55B72924568B000FD81D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE55B62924568B000FD81D /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +49,6 @@
 		8118C6B82AC3C9C0A021FEEB /* Pods_blueitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_blueitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B3C5FDE62350D4B6797CE6 /* Pods-blueit-blueitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blueit-blueitUITests.release.xcconfig"; path = "Target Support Files/Pods-blueit-blueitUITests/Pods-blueit-blueitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9A300D882936E7F40007E38A /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
-		9A762A11292DBD6A00CFBCC8 /* feedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedTableViewController.swift; sourceTree = "<group>"; };
 		A0FBB8DD292924CB009C3EEB /* RedditAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditAPICaller.swift; sourceTree = "<group>"; };
 		C5E710CEFBA97A2E107AD75C /* Pods-blueitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blueitTests.debug.xcconfig"; path = "Target Support Files/Pods-blueitTests/Pods-blueitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1751008291ADAB0002C1715 /* blueit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blueit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,7 +64,6 @@
 		D175102C291ADAB2002C1715 /* blueitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blueitUITests.swift; sourceTree = "<group>"; };
 		D175102E291ADAB2002C1715 /* blueitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blueitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D1EE55B02924551D000FD81D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		D1EE55B62924568B000FD81D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		EEFFF1F05D0EF697EE95E445 /* Pods-blueit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blueit.release.xcconfig"; path = "Target Support Files/Pods-blueit/Pods-blueit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,8 +141,6 @@
 				D1751016291ADAB2002C1715 /* LaunchScreen.storyboard */,
 				D1751019291ADAB2002C1715 /* Info.plist */,
 				D1EE55B02924551D000FD81D /* LoginViewController.swift */,
-				D1EE55B62924568B000FD81D /* FeedViewController.swift */,
-				9A762A11292DBD6A00CFBCC8 /* feedTableViewController.swift */,
 				9A300D882936E7F40007E38A /* HomeTableViewController.swift */,
 			);
 			path = blueit;
@@ -421,9 +415,7 @@
 				D1EE55B12924551D000FD81D /* LoginViewController.swift in Sources */,
 				D175100C291ADAB0002C1715 /* AppDelegate.swift in Sources */,
 				A0FBB8DE292924CC009C3EEB /* RedditAPICaller.swift in Sources */,
-				9A762A12292DBD6A00CFBCC8 /* feedTableViewController.swift in Sources */,
 				9A300D892936E7F40007E38A /* HomeTableViewController.swift in Sources */,
-				D1EE55B72924568B000FD81D /* FeedViewController.swift in Sources */,
 				D175100E291ADAB0002C1715 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -29,6 +29,12 @@ extension URL {
     }
 }
 
+extension Array {
+    subscript (safe index: Index) -> Element? {
+        0 <= index && index < count ? self[index] : nil
+    }
+}
+
 class RedditAPICaller: NSObject {
     
     //for calling methods in this class in other files
@@ -119,21 +125,33 @@ class RedditAPICaller: NSObject {
         return try await self.get(endPoint: "/best", params: ["limit":String(limit)]) as? [[String: Any]]
     }
     func accessPost(post_list: [[String:Any]]?, index: Int) -> [String:Any]? {
-        guard let nth_post = post_list![index]["data"] as? [String:Any] else {
+        if post_list == nil {
+            print("no posts")
+            return nil
+        }
+        if post_list!.count <= index {
+            print("index out of bounds: \(post_list!.count) <= \(index)")
+            return nil
+        }
+        guard let nth_post = post_list?[index]["data"] as? [String:Any] else {
             print("could not get post")
             return nil
         }
         return nth_post
     }
-    func getComments(article_id: String, limit: Int, depth: Int = 0, sort: String = "top") async throws -> [[String: Any]]? {
-        return try await self.get(endPoint: "/comments/"+article_id, params: [
+    func getComments(article_id: String?, limit: Int, depth: Int = 0, sort: String = "top") async throws -> [[String: Any]]? {
+        if article_id == nil {
+            print("no article id")
+            return nil
+        }
+        return try await self.get(endPoint: "/comments/"+article_id!, params: [
             "limit":String(limit),
             "depth":String(depth),
             "sort":sort
         ]) as? [[String: Any]]
     }
     func accessComment(comment_list: [[String:Any]]?, index: Int) -> [String:Any]? {
-        guard let comment = comment_list![index+1]["data"] as? [String:Any] else {
+        guard let comment = comment_list?[index+1]["data"] as? [String:Any] else {
             print("could not get comment A")
             return nil
         }
