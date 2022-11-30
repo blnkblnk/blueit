@@ -139,6 +139,7 @@
                                 <action selector="onLogout:" destination="mm0-ot-fhB" id="Bxp-H2-TPn"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="New Post" id="jhU-1I-Dc1"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9rD-zX-l5m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
