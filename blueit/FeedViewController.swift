@@ -7,16 +7,44 @@
 
 import UIKit
 
-class FeedViewController: UIViewController {
-
+class FeedViewController: UIViewController, UITableViewDelegate {
+    
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         // Do any additional setup after loading the view.
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print("cellforrows is working")	
+        let cell = tableView.dequeueReusableCell(withIdentifier: "feedCell")
+        return cell!
     }
     
     
+    func numberOfSections(in tableView: UITableView) -> Int
+    {
+      return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return 5
+    }
+    
+   /* func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath)
+    {
+        
+    }*/
+    
+    
+  
+
     override func viewDidAppear(_ animated: Bool) {
         print("API token = " + (RedditAPICaller.sessionToken ?? "nil"))
         Task {
