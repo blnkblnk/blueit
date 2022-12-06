@@ -7,7 +7,7 @@
 
 import UIKit
 
-let debug = false
+let debug = true
 
 class HomeTableViewController: UITableViewController {
     var num_posts = 0
@@ -50,7 +50,25 @@ class HomeTableViewController: UITableViewController {
             //how to access a post's data
             print("first post keys: ", first_post?.keys as Any)
             print("first post title: ", first_post?["title"] as Any)
+            print("first post upvote status: {", type(of: first_post?["likes"]) , "}")
             
+            //how to check if a post is upvoted or not
+            let upvote_status = first_post?["likes"] as? Bool
+            if upvote_status == true {
+                print("upvoted")
+            } else if upvote_status == nil {
+                print("not voted")
+            } else if upvote_status == false {
+                print("downvoted")
+            }
+
+            //how to vote
+            //-1 is downvote, 0 is remove vote, 1 is upvote
+            _ = try await RedditAPICaller.client.votePost(id: first_post_id as? String, dir: 1)
+            
+            let first_comment = RedditAPICaller.client.accessComment(comment_list: comments, index: 0)
+            
+            _ = try await RedditAPICaller.client.voteComment(id: first_comment?["id"] as? String, dir: 1)
             
         }
     }
@@ -76,7 +94,7 @@ class HomeTableViewController: UITableViewController {
         let post = RedditAPICaller.client.accessPost(post_list: posts, index: indexPath.row)
         
         
-        print("got imgurl \(post?["url_overridden_by_dest"] ?? "nil")")
+        print("got post link \(post?["url_overridden_by_dest"] ?? "nil")")
         
         return cell
     }

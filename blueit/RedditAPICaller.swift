@@ -108,7 +108,7 @@ class RedditAPICaller: NSObject {
         
         let (data, _) = try await URLSession.shared.data(for: request)
         var json = try JSONSerialization.jsonObject(with: data, options: []) as Any
-        
+                
         while json as? NSDictionary != nil {
             if (json as! NSDictionary)["data"] != nil {
                 json = (json as! NSDictionary)["data"] as Any
@@ -121,6 +121,7 @@ class RedditAPICaller: NSObject {
         
         return json as! [Any]?
     }
+    
     func getBestPosts(limit: Int) async throws -> [[String: Any]]? {
         return try await self.get(endPoint: "/best", params: ["limit":String(limit)]) as? [[String: Any]]
     }
@@ -168,5 +169,60 @@ class RedditAPICaller: NSObject {
             return nil
         }
         return comment
+    }
+    func post(endPoint: String, params: Dictionary<String, String>) async throws -> HTTPURLResponse? {
+        if RedditAPICaller.sessionToken == nil {
+            print("[BRUH] attemped api call with no session token")
+            return nil
+        }
+        
+        var queryItems: [URLQueryItem] = []
+        for i in params.keys {
+            queryItems.append(URLQueryItem(name: i, value: params[i]))
+        }
+        
+        var urlComps = URLComponents(string: OAUTH_ENDPOINT + endPoint)!
+        urlComps.queryItems = queryItems
+        var request = URLRequest(url: urlComps.url!)
+        request.httpMethod = "POST"
+        
+        request.allHTTPHeaderFields = HEADERS
+        request.addValue("Bearer " + RedditAPICaller.sessionToken!, forHTTPHeaderField: "Authorization")
+        
+        let (_, response) = try await URLSession.shared.data(for: request)
+        let httpResponse = response as? HTTPURLResponse
+        
+        return response as? HTTPURLResponse
+    }
+    func votePost(id: String?, dir: Int) async throws -> Bool? {
+        guard (id != nil) else {
+            print("could not vote, nil id given")
+            return nil
+        }
+        let full_id = "t3_\(id!)"
+        guard (dir == -1 || dir == 0 || dir == 1) else {
+            print("dir must be -1, 0, or 1")
+            return nil
+        }
+        return try await self.post(endPoint: "/api/vote", params: [
+            "dir":String(dir),
+            "id":full_id
+        ])?.statusCode == 200
+    }
+    func voteComment(id: String?, dir: Int) async throws -> Bool? {
+        //id needs to start with t1_ for comments and t3_ for posts
+        guard (id != nil) else {
+            print("could not vote, nil id given")
+            return nil
+        }
+        let full_id = "t1_\(id!)"
+        guard (dir == -1 || dir == 0 || dir == 1) else {
+            print("dir must be -1, 0, or 1")
+            return nil
+        }
+        return try await self.post(endPoint: "/api/vote", params: [
+            "dir":String(dir),
+            "id":full_id
+        ])?.statusCode == 200
     }
 }
