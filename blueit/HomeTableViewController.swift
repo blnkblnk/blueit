@@ -15,10 +15,23 @@ class HomeTableViewController: UITableViewController {
     
     var blueitArray = [NSDictionary]()
     
+    let myRefreshControl = UIRefreshControl()
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loadfeed()
+        
+        myRefreshControl.addTarget(self, action: #selector(loadfeed), for: .valueChanged)
+        tableView.refreshControl = myRefreshControl
+        
+    }
+    
+
+    
+    @objc func loadfeed() {
         
         print("API token = " + (RedditAPICaller.sessionToken ?? "nil"))
         Task {
@@ -61,6 +74,8 @@ class HomeTableViewController: UITableViewController {
             } else if upvote_status == false {
                 print("downvoted")
             }
+            
+            self.myRefreshControl.endRefreshing()
 
             //how to vote
             //-1 is downvote, 0 is remove vote, 1 is upvote
@@ -71,9 +86,7 @@ class HomeTableViewController: UITableViewController {
             _ = try await RedditAPICaller.client.voteComment(id: first_comment?["id"] as? String, dir: 1)
             
         }
-    }
-    func loadfeed() {
-        //RedditAPICaller.client.accessPost(post_list: posts, index: int)
+
     }
     
     @IBAction func onLogout(_ sender: Any) {
