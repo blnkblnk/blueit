@@ -80,7 +80,7 @@ class HomeTableViewController: UITableViewController {
         
         self.dismiss(animated: true)
         UserDefaults.standard.set(false, forKey: "userLoggedIn")
-        
+ 	       
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -88,10 +88,10 @@ class HomeTableViewController: UITableViewController {
         
         let post = RedditAPICaller.client.accessPost(post_list: posts, index: indexPath.row)
         
-        cell.subreddit.text = "some subreddit" //subreddit_name_prefixed
-        cell.authorlabel.text = "some author" //author
+        cell.subreddit.text = post?["subreddit_name_prefixed"] as? String ?? "no subreddit_name_prefixed"//subreddit_name_prefixed
+        cell.authorlabel.text = post?["author"] as? String ?? "no author" //author
         cell.headLine.text = post?["title"] as? String ?? "no title" //title
-        cell.content.text = "some content/text" //selftext
+        cell.content.text = post?["selftext"] as? String ?? "no selftext" //selftext
         
         
         
