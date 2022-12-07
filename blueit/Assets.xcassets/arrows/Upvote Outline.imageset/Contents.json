@@ -1,11 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "Arrows 60 Ouline up.png",
+      "filename" : "Arrows 30 Outline up.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Arrows 60 Ouline up.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
