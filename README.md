@@ -32,9 +32,9 @@ In this project, we design a replication of the app named "Reddit" and implement
 * Users are able to set their profile picture(done)
 * User will be able to view trending posts(done)
 * User will be able to view comments on posts
-* User will be able to post text, links, or images to “Subreddits”
+* User will be able to post text, links, or images to “Subreddits”(done)
 * User will be able to comment on posts
-* User will be able to upvote or downvote on subreddits
+* User will be able to upvote or downvote on subreddits(done)
 
 **Optional Nice-to-have Stories**
 
