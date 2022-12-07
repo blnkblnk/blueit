@@ -34,7 +34,7 @@ class PostViewController: UIViewController {
     
     @IBAction func post(_ sender: Any) {
         if(!TypeText.text.isEmpty){
-            RedditAPICaller.client?.post
+            //RedditAPICaller.client?.post
         }
     }
     
