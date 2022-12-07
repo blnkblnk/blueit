@@ -15,6 +15,17 @@ class PostViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    @IBAction func subreddit(_ sender: Any) {
+    }
+    
+    
+   
+    @IBOutlet weak var TypeTitle: UITextView!
+    
+    
+    @IBOutlet weak var TypeText: UITextView!
+    
 
     @IBAction func exit(_ sender: Any) {
         dismiss(animated: true)
@@ -22,7 +33,9 @@ class PostViewController: UIViewController {
     
     
     @IBAction func post(_ sender: Any) {
-        
+        if(!TypeText.text.isEmpty){
+            RedditAPICaller.client?.post
+        }
     }
     
     

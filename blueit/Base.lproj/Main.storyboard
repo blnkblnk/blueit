@@ -184,6 +184,9 @@
                                     </children>
                                 </menu>
                                 <state key="normal" title="subreddit"/>
+                                <connections>
+                                    <action selector="subreddit:" destination="caX-UP-oPX" eventType="touchUpInside" id="4Md-hu-i4o"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="odI-Eh-5Ex"/>
@@ -210,6 +213,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="TypeText" destination="cvX-y5-92H" id="uws-H8-7NJ"/>
+                        <outlet property="TypeTitle" destination="Vn9-y4-YpT" id="ktM-EH-0Jd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wcS-nv-Y4y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
