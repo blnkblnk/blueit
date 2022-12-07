@@ -16,6 +16,16 @@ class PostViewController: UIViewController {
     }
     
 
+    @IBAction func exit(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
+    
+    @IBAction func post(_ sender: Any) {
+        
+    }
+    
+    
     /*
     // MARK: - Navigation
 

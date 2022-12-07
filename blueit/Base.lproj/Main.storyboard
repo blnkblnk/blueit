@@ -143,6 +143,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="New Post" id="jhU-1I-Dc1">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="wz0-Aj-CRM" kind="presentation" id="bmi-5V-Mbt"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
@@ -155,28 +158,25 @@
             <objects>
                 <viewController id="caX-UP-oPX" customClass="PostViewController" customModule="blueit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lq6-40-iE6">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Title" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vn9-y4-YpT">
-                                <rect key="frame" x="16" y="159" width="361" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Title" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vn9-y4-YpT">
+                                <rect key="frame" x="1" y="159" width="391" height="69"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Content" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cvX-y5-92H">
-                                <rect key="frame" x="16" y="236" width="361" height="490"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Content" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cvX-y5-92H">
+                                <rect key="frame" x="1" y="236" width="391" height="490"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ha7-p9-rob">
-                                <rect key="frame" x="16" y="103" width="361" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ha7-p9-rob">
+                                <rect key="frame" x="1" y="56" width="391" height="30"/>
                                 <menu key="menu" id="BeO-a2-DZd">
                                     <children>
                                         <command title="Item 1" id="55d-n4-byk"/>
@@ -188,8 +188,28 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="odI-Eh-5Ex"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ha7-p9-rob" firstAttribute="leading" secondItem="odI-Eh-5Ex" secondAttribute="leading" constant="1" id="02L-hW-h5t"/>
+                            <constraint firstItem="Vn9-y4-YpT" firstAttribute="leading" secondItem="odI-Eh-5Ex" secondAttribute="leading" constant="1" id="EBp-W8-QMa"/>
+                            <constraint firstItem="odI-Eh-5Ex" firstAttribute="trailing" secondItem="Ha7-p9-rob" secondAttribute="trailing" constant="1" id="Egw-6N-Xvo"/>
+                            <constraint firstItem="Ha7-p9-rob" firstAttribute="top" secondItem="odI-Eh-5Ex" secondAttribute="top" id="ZdV-Ef-6Ni"/>
+                            <constraint firstItem="odI-Eh-5Ex" firstAttribute="trailing" secondItem="Vn9-y4-YpT" secondAttribute="trailing" constant="1" id="bOb-to-Sna"/>
+                            <constraint firstItem="odI-Eh-5Ex" firstAttribute="trailing" secondItem="cvX-y5-92H" secondAttribute="trailing" constant="1" id="g9Y-L8-AEH"/>
+                            <constraint firstItem="cvX-y5-92H" firstAttribute="leading" secondItem="odI-Eh-5Ex" secondAttribute="leading" constant="1" id="knx-ml-B8V"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="g4v-8s-J9W"/>
+                    <navigationItem key="navigationItem" id="g4v-8s-J9W">
+                        <barButtonItem key="leftBarButtonItem" title="Exit" id="Y2J-HW-cIZ">
+                            <connections>
+                                <action selector="exit:" destination="caX-UP-oPX" id="tA8-WT-GZs"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Post" id="wUi-PP-aAF">
+                            <connections>
+                                <action selector="post:" destination="caX-UP-oPX" id="bvy-R8-mR3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wcS-nv-Y4y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -385,7 +405,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wz0-Aj-CRM" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q3q-Gc-Kww">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.084734859329999995" green="0.73357157799999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
