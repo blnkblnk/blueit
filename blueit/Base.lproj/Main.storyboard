@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fHd-VH-BHQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fHd-VH-BHQ">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
@@ -161,16 +161,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Title" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vn9-y4-YpT">
-                                <rect key="frame" x="1" y="159" width="391" height="69"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vn9-y4-YpT">
+                                <rect key="frame" x="1" y="157" width="391" height="69"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="pCb-OF-dm8"/>
+                                </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Content" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cvX-y5-92H">
-                                <rect key="frame" x="1" y="236" width="391" height="490"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cvX-y5-92H">
+                                <rect key="frame" x="1" y="236" width="391" height="461"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="461" id="gpG-Sv-xej"/>
+                                </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -188,17 +194,27 @@
                                     <action selector="subreddit:" destination="caX-UP-oPX" eventType="touchUpInside" id="4Md-hu-i4o"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="characters left 40000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKN-D9-2lW">
+                                <rect key="frame" x="206" y="705" width="167" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="odI-Eh-5Ex"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Ha7-p9-rob" firstAttribute="leading" secondItem="odI-Eh-5Ex" secondAttribute="leading" constant="1" id="02L-hW-h5t"/>
+                            <constraint firstItem="odI-Eh-5Ex" firstAttribute="trailing" secondItem="mKN-D9-2lW" secondAttribute="trailing" constant="20" id="A9d-19-YTk"/>
                             <constraint firstItem="Vn9-y4-YpT" firstAttribute="leading" secondItem="odI-Eh-5Ex" secondAttribute="leading" constant="1" id="EBp-W8-QMa"/>
+                            <constraint firstItem="mKN-D9-2lW" firstAttribute="top" secondItem="cvX-y5-92H" secondAttribute="bottom" constant="8" id="EIV-5M-XME"/>
                             <constraint firstItem="odI-Eh-5Ex" firstAttribute="trailing" secondItem="Ha7-p9-rob" secondAttribute="trailing" constant="1" id="Egw-6N-Xvo"/>
+                            <constraint firstItem="cvX-y5-92H" firstAttribute="top" secondItem="Vn9-y4-YpT" secondAttribute="bottom" constant="10" id="UQi-k7-GAk"/>
+                            <constraint firstItem="odI-Eh-5Ex" firstAttribute="trailing" secondItem="cvX-y5-92H" secondAttribute="trailing" constant="1" id="VA6-E7-2gd"/>
                             <constraint firstItem="Ha7-p9-rob" firstAttribute="top" secondItem="odI-Eh-5Ex" secondAttribute="top" id="ZdV-Ef-6Ni"/>
                             <constraint firstItem="odI-Eh-5Ex" firstAttribute="trailing" secondItem="Vn9-y4-YpT" secondAttribute="trailing" constant="1" id="bOb-to-Sna"/>
-                            <constraint firstItem="odI-Eh-5Ex" firstAttribute="trailing" secondItem="cvX-y5-92H" secondAttribute="trailing" constant="1" id="g9Y-L8-AEH"/>
-                            <constraint firstItem="cvX-y5-92H" firstAttribute="leading" secondItem="odI-Eh-5Ex" secondAttribute="leading" constant="1" id="knx-ml-B8V"/>
+                            <constraint firstItem="odI-Eh-5Ex" firstAttribute="bottom" secondItem="cvX-y5-92H" secondAttribute="bottom" constant="86" id="jaU-Xf-CJ1"/>
+                            <constraint firstItem="cvX-y5-92H" firstAttribute="leading" secondItem="odI-Eh-5Ex" secondAttribute="leading" constant="1" id="ufa-3y-dVn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="g4v-8s-J9W">
@@ -216,6 +232,7 @@
                     <connections>
                         <outlet property="TypeText" destination="cvX-y5-92H" id="uws-H8-7NJ"/>
                         <outlet property="TypeTitle" destination="Vn9-y4-YpT" id="ktM-EH-0Jd"/>
+                        <outlet property="characterCount" destination="mKN-D9-2lW" id="JIw-WT-ZhZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wcS-nv-Y4y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

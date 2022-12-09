@@ -7,10 +7,19 @@
 
 import UIKit
 
-class PostViewController: UIViewController {
+class PostViewController: UIViewController, UITextViewDelegate {
 
+    
+    @IBOutlet weak var TypeTitle: UITextView!
+    @IBOutlet weak var TypeText: UITextView!
+    @IBOutlet weak var characterCount: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        TypeText.becomeFirstResponder()
+        TypeText.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -20,11 +29,6 @@ class PostViewController: UIViewController {
     }
     
     
-   
-    @IBOutlet weak var TypeTitle: UITextView!
-    
-    
-    @IBOutlet weak var TypeText: UITextView!
     
 
     @IBAction func exit(_ sender: Any) {
@@ -36,6 +40,21 @@ class PostViewController: UIViewController {
         if(!TypeText.text.isEmpty){
             //RedditAPICaller.client?.post
         }
+    }
+    
+    // MARK: - Text view delegate
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        let totalLength = textView.text.count + text.count
+        if totalLength <= 40000 {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        characterCount.text = "\(40000 - textView.text.count) characters left"
     }
     
     
