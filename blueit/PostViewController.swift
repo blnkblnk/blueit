@@ -54,7 +54,7 @@ class PostViewController: UIViewController, UITextViewDelegate {
     }
     
     func textViewDidChange(_ textView: UITextView) {
-        characterCount.text = "\(40000 - textView.text.count) characters left"
+        characterCount.text = "\(40000 - textView.text.count) characters left:"
     }
     
     
