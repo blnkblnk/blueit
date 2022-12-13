@@ -121,10 +121,12 @@ class RedditAPICaller: NSObject {
         
         return json as! [Any]?
     }
-    
-    func getBestPosts(limit: Int) async throws -> [[String: Any]]? {
-        return try await self.get(endPoint: "/best", params: ["limit":String(limit)]) as? [[String: Any]]
+    func getPosts(limit: Int, endPoint: String) async throws -> [[String: Any]]? {
+        return try await self.get(endPoint: endPoint, params: ["limit":String(limit)]) as? [[String: Any]]
     }
+//    func getBestPosts(limit: Int) async throws -> [[String: Any]]? {
+//        return try await self.getPosts(limit: limit, endPoint: "/best")
+//    }
     func accessPost(post_list: [[String:Any]]?, index: Int) -> [String:Any]? {
         if post_list == nil {
             print("no posts")
@@ -190,7 +192,7 @@ class RedditAPICaller: NSObject {
         request.addValue("Bearer " + RedditAPICaller.sessionToken!, forHTTPHeaderField: "Authorization")
         
         let (_, response) = try await URLSession.shared.data(for: request)
-        let httpResponse = response as? HTTPURLResponse
+        let _httpResponse = response as? HTTPURLResponse
         
         return response as? HTTPURLResponse
     }
