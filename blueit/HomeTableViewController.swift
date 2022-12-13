@@ -85,8 +85,17 @@ class HomeTableViewController: UITableViewController {
             
             _ = try await RedditAPICaller.client.voteComment(id: first_comment?["id"] as? String, dir: 1)
             
+            addTenMore()
         }
 
+    }
+    
+    func addTenMore(){
+        Task{
+            posts = try await RedditAPICaller.client.getBestPosts(limit: num_posts+10)
+            num_posts = num_posts+10
+            self.tableView.reloadData()
+        }
     }
     
     @IBAction func onLogout(_ sender: Any) {
