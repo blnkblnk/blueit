@@ -127,6 +127,12 @@ class RedditAPICaller: NSObject {
     func getPosts(limit: Int, endPoint: String) async throws -> [[String: Any]]? {
         return try await self.get(endPoint: endPoint, params: ["limit":String(limit)]) as? [[String: Any]]
     }
+    func getUserPosts(limit: Int, username: String?) async throws -> [[String: Any]]? {
+        guard username != nil else {
+            return nil
+        }
+        return try await self.get(endPoint: "/user/\(username!)/submitted", params: ["limit":String(limit)]) as? [[String: Any]]
+    }
 //    func getBestPosts(limit: Int) async throws -> [[String: Any]]? {
 //        return try await self.getPosts(limit: limit, endPoint: "/best")
 //    }
@@ -163,6 +169,10 @@ class RedditAPICaller: NSObject {
         }
         guard let comment = comment["children"] as? [Any] else {
             print("could not get comment B")
+            return nil
+        }
+        guard comment.count > 0 else {
+            print("no comment")
             return nil
         }
         guard let comment = comment[0] as? [String:Any] else {

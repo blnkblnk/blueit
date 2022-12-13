@@ -95,6 +95,9 @@ class HomeTableViewController: UITableViewController {
             print(user?.keys as Any)
             print(user?["id"] as Any)
             print(user?["name"] as Any)
+            let userPosts = try await RedditAPICaller.client.getUserPosts(limit: 1, username: user?["name"] as? String)
+            let userFirstPost = RedditAPICaller.client.accessPost(post_list: userPosts, index: 0)
+            print(userFirstPost?["title"])
         }
 
     }
