@@ -39,7 +39,7 @@ class HomeTableViewController: UITableViewController {
             //RedditAPICaller.client.getBestPosts(limit: Int)
             //gets two posts from the home page
             //returns some ungodly complex data structure
-            posts = try await RedditAPICaller.client.getBestPosts(limit: 10)
+            posts = try await RedditAPICaller.client.getPosts(limit: 10, endPoint: "/best")
             num_posts = 10
             self.tableView.reloadData()
             
