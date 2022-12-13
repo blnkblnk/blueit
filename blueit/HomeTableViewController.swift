@@ -12,7 +12,7 @@ let debug = true
 class HomeTableViewController: UITableViewController {
     var num_posts = 0
     var posts: [[String: Any]]? = nil
-    var feedEndpoint = "/best"
+    public static var feedEndpoint = "/best"
     var blueitArray = [NSDictionary]()
     
     let myRefreshControl = UIRefreshControl()
@@ -35,8 +35,9 @@ class HomeTableViewController: UITableViewController {
             return
         }
         Task {
-            num_posts += amount
-            posts = try await RedditAPICaller.client.getPosts(limit: num_posts, endPoint: feedEndpoint)
+            num_posts = amount
+            print("load: \(HomeTableViewController.feedEndpoint)")
+            posts = try await RedditAPICaller.client.getPosts(limit: num_posts, endPoint: HomeTableViewController.feedEndpoint)
             self.tableView.reloadData()
             self.myRefreshControl.endRefreshing()
 

@@ -38,8 +38,10 @@ class PostViewController: UIViewController, UITextViewDelegate {
     
     @IBAction func post(_ sender: Any) {
         if(!TypeText.text.isEmpty){
-            //RedditAPICaller.client?.post
+            HomeTableViewController.feedEndpoint = "/r/\(TypeText.text ?? "askreddit")/new"
         }
+        self.dismiss(animated: true)
+        
     }
     
     // MARK: - Text view delegate
