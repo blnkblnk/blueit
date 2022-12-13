@@ -1,16 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Arrows 30 Solid down.png",
+      "filename" : "Arrows_60_Solid_down_30x30.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Arrows 60 Solid down.png",
+      "filename" : "Arrows_60_Solid_down_1_60x60.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Arrows_60_Solid_down_2_90x90.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

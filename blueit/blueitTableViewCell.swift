@@ -15,6 +15,39 @@ class blueitTableViewCell: UITableViewCell {
     @IBOutlet weak var content: UILabel!
     
     
+    @IBOutlet weak var upButton: UIButton!
+    @IBOutlet weak var downButton: UIButton!
+    
+    
+    @IBAction func solidupButton(_ sender: Any) {
+    }
+    
+    var soliduped:Bool = false
+    
+    func setSolidup(_ isSoliduped:Bool) {
+        soliduped = isSoliduped
+        if (soliduped) {
+            upButton.setImage(UIImage(named: "Upvote Solid"), for: UIControl.State.normal)
+        }
+        else {
+            upButton.setImage(UIImage(named: "Upvote Outline"), for: UIControl.State.normal)
+        }
+    }
+    
+    @IBAction func soliddownButton(_ sender: Any) {
+    }
+    
+    var soliddowned:Bool = false
+    
+    func setSoliddown(_ isSoliddowned:Bool) {
+        soliddowned = isSoliddowned
+        if (soliddowned) {
+            downButton.setImage(UIImage(named: "Downvote Solid"), for: UIControl.State.normal)
+        }
+        else {
+            downButton.setImage(UIImage(named: "Downvote Outline"), for: UIControl.State.normal)
+        }
+    }
     
     
     override func awakeFromNib() {
