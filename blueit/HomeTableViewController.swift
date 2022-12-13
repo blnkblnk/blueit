@@ -38,6 +38,8 @@ class HomeTableViewController: UITableViewController {
             num_posts += amount
             posts = try await RedditAPICaller.client.getPosts(limit: num_posts, endPoint: feedEndpoint)
             self.tableView.reloadData()
+            self.myRefreshControl.endRefreshing()
+
         }
     }
     
@@ -45,7 +47,6 @@ class HomeTableViewController: UITableViewController {
         
         print("API token = " + (RedditAPICaller.sessionToken ?? "nil"))
         loadPosts(amount: 10)
-
     }
     
     @IBAction func onLogout(_ sender: Any) {
@@ -119,8 +120,6 @@ class HomeTableViewController: UITableViewController {
             } else if upvote_status == false {
                 print("downvoted")
             }
-            
-            self.myRefreshControl.endRefreshing()
             
             //how to vote
             //-1 is downvote, 0 is remove vote, 1 is upvote
