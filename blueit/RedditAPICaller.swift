@@ -69,6 +69,7 @@ class RedditAPICaller: NSObject {
                 do {
                     let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, AnyObject>
                     RedditAPICaller.sessionToken = json["access_token"]! as? String
+                    UserDefaults.standard.set(RedditAPICaller.sessionToken, forKey: "sessionToken")
                     //go to feed if successful login
                     DispatchQueue.main.async {
                         LoginViewController.client?.goToFeed()

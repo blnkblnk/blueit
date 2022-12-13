@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fHd-VH-BHQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fHd-VH-BHQ">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
@@ -56,6 +56,7 @@
         <scene sceneID="smg-O5-QgY">
             <objects>
                 <tabBarController id="RjU-vd-wdK" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="QjP-3p-h2J"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uEm-IJ-thn">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -97,7 +98,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="onLogin:" destination="fHd-VH-BHQ" eventType="touchUpInside" id="GnO-gf-b7m"/>
-                                    <segue destination="RjU-vd-wdK" kind="presentation" identifier="loginToHome" modalPresentationStyle="fullScreen" id="h9T-Bh-aRS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -112,6 +112,9 @@
                             <constraint firstItem="4dp-FY-9iM" firstAttribute="top" secondItem="VIL-NB-MYc" secondAttribute="top" constant="371" id="qq5-s1-BiC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="RjU-vd-wdK" kind="presentation" identifier="loginToHome" modalPresentationStyle="fullScreen" id="kTV-JF-pqH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mQw-4q-V4h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

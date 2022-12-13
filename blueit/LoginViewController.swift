@@ -32,8 +32,9 @@ class LoginViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool)
     {
-        if UserDefaults.standard.bool(forKey: "userLoggedIn") == true
+        if UserDefaults.standard.string(forKey: "sessionToken") != nil
         {
+            RedditAPICaller.sessionToken = UserDefaults.standard.string(forKey: "sessionToken")
             self.performSegue(withIdentifier: "loginToHome", sender: self)
             
         }
@@ -41,7 +42,6 @@ class LoginViewController: UIViewController {
     
     
     func goToFeed() {
-        UserDefaults.standard.set(true, forKey: "userLoggedIn")
         self.performSegue(withIdentifier: "loginToHome", sender: self)
     }
     
