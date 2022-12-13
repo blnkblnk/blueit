@@ -92,7 +92,7 @@ class HomeTableViewController: UITableViewController {
     
     func addTenMore(){
         Task{
-            posts = try await RedditAPICaller.client.getBestPosts(limit: num_posts+10)
+            posts = try await RedditAPICaller.client.getPosts(limit: num_posts+10, endPoint: "/best")
             num_posts = num_posts+10
             self.tableView.reloadData()
         }
