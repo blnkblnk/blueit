@@ -88,7 +88,7 @@ class RedditAPICaller: NSObject {
         return
     }
     
-    func get(endPoint: String, params: Dictionary<String, String>) async throws -> [Any]? {
+    func get(endPoint: String, params: Dictionary<String, String>) async throws -> Any? {
         if RedditAPICaller.sessionToken == nil {
             print("[BRUH] attemped api call with no session token")
             return nil
@@ -119,7 +119,10 @@ class RedditAPICaller: NSObject {
             }
         }
         
-        return json as! [Any]?
+        return json as Any?
+    }
+    func getIdentity() async throws -> [String: Any]? {
+        return try await self.get(endPoint: "/api/v1/me", params: [:]) as? [String: Any]
     }
     func getPosts(limit: Int, endPoint: String) async throws -> [[String: Any]]? {
         return try await self.get(endPoint: endPoint, params: ["limit":String(limit)]) as? [[String: Any]]

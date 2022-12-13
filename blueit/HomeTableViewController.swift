@@ -43,9 +43,12 @@ class HomeTableViewController: UITableViewController {
             num_posts = 10
             self.tableView.reloadData()
             
+            
+            //EVERYTHING AFTER THIS POINT IS DEBUG
             if !debug {
                 return
             }
+            
             //log posts
             print("=====POSTS=====")
             print(posts as Any)
@@ -85,6 +88,13 @@ class HomeTableViewController: UITableViewController {
             
             _ = try await RedditAPICaller.client.voteComment(id: first_comment?["id"] as? String, dir: 1)
             
+            //print user
+            print("=====USER=====")
+            let user = try await RedditAPICaller.client.getIdentity()
+            print(user as Any)
+            print(user?.keys as Any)
+            print(user?["id"] as Any)
+            print(user?["name"] as Any)
         }
 
     }

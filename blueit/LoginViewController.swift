@@ -9,7 +9,7 @@ import UIKit
 
 
 let DURATION = "temporary"
-let SCOPE = "read,vote,submit"
+let SCOPE = "read,vote,submit,identity"
 let STATE = "pyscript"
 
 let OAUTH_URL = URL(string: "https://www.reddit.com/api/v1/authorize?client_id=\(CLIENT_ID)&response_type=code&state=\(STATE)&redirect_uri=\(REDIRECT_URI)&duration=\(DURATION)&scope=\(SCOPE)")!
