@@ -25,11 +25,6 @@ class PostViewController: UIViewController, UITextViewDelegate {
     }
     
     
-    @IBAction func subreddit(_ sender: Any) {
-    }
-    
-    
-    
 
     @IBAction func exit(_ sender: Any) {
         dismiss(animated: true)
@@ -38,8 +33,10 @@ class PostViewController: UIViewController, UITextViewDelegate {
     
     @IBAction func post(_ sender: Any) {
         if(!TypeText.text.isEmpty){
-            //RedditAPICaller.client?.post
+            HomeTableViewController.feedEndpoint = "/r/\(TypeText.text ?? "askreddit")/new"
         }
+        self.dismiss(animated: true)
+        
     }
     
     // MARK: - Text view delegate
