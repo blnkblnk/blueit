@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -206,7 +205,7 @@
                                 <action selector="onLogout:" destination="mm0-ot-fhB" id="Bxp-H2-TPn"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="New Post" id="jhU-1I-Dc1">
+                        <barButtonItem key="rightBarButtonItem" title="Search" id="jhU-1I-Dc1">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="wz0-Aj-CRM" kind="presentation" id="bmi-5V-Mbt"/>
@@ -295,42 +294,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Title" translatesAutoresizingMaskIntoConstraints="NO" id="Vn9-y4-YpT">
-                                <rect key="frame" x="1" y="157" width="391" height="69"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="69" id="pCb-OF-dm8"/>
-                                </constraints>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Content" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cvX-y5-92H">
-                                <rect key="frame" x="1" y="236" width="391" height="461"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cvX-y5-92H">
+                                <rect key="frame" x="1" y="172" width="391" height="525"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="461" id="gpG-Sv-xej"/>
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" secureTextEntry="YES"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ha7-p9-rob">
-                                <rect key="frame" x="1" y="56" width="391" height="30"/>
-                                <menu key="menu" id="BeO-a2-DZd">
-                                    <children>
-                                        <command title="Subreddit 1" id="55d-n4-byk"/>
-                                        <command title="Subreddit 2" id="ITT-gO-fMi"/>
-                                    </children>
-                                </menu>
-                                <state key="normal" title="subreddit"/>
-                                <connections>
-                                    <action selector="subreddit:" destination="caX-UP-oPX" eventType="touchUpInside" id="4Md-hu-i4o"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="characters left 40000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKN-D9-2lW">
                                 <rect key="frame" x="223.33333333333337" y="705" width="149.66666666666663" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search for Subreddit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGz-ng-BDG">
+                                <rect key="frame" x="1" y="63" width="392" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type below( Ex. Ask )" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UP7-X9-cnd">
+                                <rect key="frame" x="1" y="116" width="392" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -338,15 +328,9 @@
                         <viewLayoutGuide key="safeArea" id="odI-Eh-5Ex"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Ha7-p9-rob" firstAttribute="leading" secondItem="odI-Eh-5Ex" secondAttribute="leading" constant="1" id="02L-hW-h5t"/>
                             <constraint firstItem="odI-Eh-5Ex" firstAttribute="trailing" secondItem="mKN-D9-2lW" secondAttribute="trailing" constant="20" id="A9d-19-YTk"/>
-                            <constraint firstItem="Vn9-y4-YpT" firstAttribute="leading" secondItem="odI-Eh-5Ex" secondAttribute="leading" constant="1" id="EBp-W8-QMa"/>
                             <constraint firstItem="mKN-D9-2lW" firstAttribute="top" secondItem="cvX-y5-92H" secondAttribute="bottom" constant="8" id="EIV-5M-XME"/>
-                            <constraint firstItem="odI-Eh-5Ex" firstAttribute="trailing" secondItem="Ha7-p9-rob" secondAttribute="trailing" constant="1" id="Egw-6N-Xvo"/>
-                            <constraint firstItem="cvX-y5-92H" firstAttribute="top" secondItem="Vn9-y4-YpT" secondAttribute="bottom" constant="10" id="UQi-k7-GAk"/>
                             <constraint firstItem="odI-Eh-5Ex" firstAttribute="trailing" secondItem="cvX-y5-92H" secondAttribute="trailing" constant="1" id="VA6-E7-2gd"/>
-                            <constraint firstItem="Ha7-p9-rob" firstAttribute="top" secondItem="odI-Eh-5Ex" secondAttribute="top" id="ZdV-Ef-6Ni"/>
-                            <constraint firstItem="odI-Eh-5Ex" firstAttribute="trailing" secondItem="Vn9-y4-YpT" secondAttribute="trailing" constant="1" id="bOb-to-Sna"/>
                             <constraint firstItem="odI-Eh-5Ex" firstAttribute="bottom" secondItem="cvX-y5-92H" secondAttribute="bottom" constant="86" id="jaU-Xf-CJ1"/>
                             <constraint firstItem="cvX-y5-92H" firstAttribute="leading" secondItem="odI-Eh-5Ex" secondAttribute="leading" constant="1" id="ufa-3y-dVn"/>
                         </constraints>
@@ -357,7 +341,7 @@
                                 <action selector="exit:" destination="caX-UP-oPX" id="tA8-WT-GZs"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Post" id="wUi-PP-aAF">
+                        <barButtonItem key="rightBarButtonItem" title="Search" id="wUi-PP-aAF">
                             <connections>
                                 <action selector="post:" destination="caX-UP-oPX" id="bvy-R8-mR3"/>
                             </connections>
@@ -365,13 +349,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="TypeText" destination="cvX-y5-92H" id="uws-H8-7NJ"/>
-                        <outlet property="TypeTitle" destination="Vn9-y4-YpT" id="ktM-EH-0Jd"/>
                         <outlet property="characterCount" destination="mKN-D9-2lW" id="JIw-WT-ZhZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wcS-nv-Y4y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5824" y="-625"/>
+            <point key="canvasLocation" x="5823.6641221374048" y="-625.35211267605632"/>
         </scene>
         <!--Trending-->
         <scene sceneID="cB5-JM-mGW">

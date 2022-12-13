@@ -25,11 +25,6 @@ class PostViewController: UIViewController, UITextViewDelegate {
     }
     
     
-    @IBAction func subreddit(_ sender: Any) {
-    }
-    
-    
-    
 
     @IBAction func exit(_ sender: Any) {
         dismiss(animated: true)
