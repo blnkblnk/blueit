@@ -239,20 +239,20 @@ class RedditAPICaller: NSObject {
             "id":full_id
         ])?.statusCode == 200
     }
-    func submitTextPost(subreddit: String, title: String, text: String) async throws -> Any? {
+    func submitTextPost(subreddit: String, title: String, text: String) async throws -> Bool? {
         return try await self.post(endPoint: "/api/submit", params: [
             "sr":subreddit,
             "title":title,
             "kind":"self",
             "text":text,
-        ])
+        ])?.statusCode == 200
     }
-    func submitLinkPost(subreddit: String, title: String, link: String) async throws -> Any? {
+    func submitLinkPost(subreddit: String, title: String, link: String) async throws -> Bool? {
         return try await self.post(endPoint: "/api/submit", params: [
             "sr":subreddit,
             "title":title,
             "kind":"link",
             "text":link,
-        ])
+        ])?.statusCode == 200
     }
 }
