@@ -13,8 +13,7 @@
 		843C0C3C81E71F039AEA7D65 /* Pods_blueitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8118C6B82AC3C9C0A021FEEB /* Pods_blueitTests.framework */; };
 		9A300D892936E7F40007E38A /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A300D882936E7F40007E38A /* HomeTableViewController.swift */; };
 		9A383BAA2937087F00E2546F /* blueitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A383BA92937087F00E2546F /* blueitTableViewCell.swift */; };
-		9A5DD71E29491BA200E892A3 /* AskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DD71D29491BA200E892A3 /* AskTableViewController.swift */; };
-		9A5DD72029491BE000E892A3 /* AskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DD71F29491BE000E892A3 /* AskTableViewCell.swift */; };
+		9A5DD7222949422600E892A3 /* TabPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DD7212949422600E892A3 /* TabPostViewController.swift */; };
 		9A5E0C502940362700213272 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5E0C4F2940362700213272 /* PostViewController.swift */; };
 		A0FBB8DE292924CC009C3EEB /* RedditAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FBB8DD292924CB009C3EEB /* RedditAPICaller.swift */; };
 		D175100C291ADAB0002C1715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D175100B291ADAB0002C1715 /* AppDelegate.swift */; };
@@ -56,8 +55,7 @@
 		88B3C5FDE62350D4B6797CE6 /* Pods-blueit-blueitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blueit-blueitUITests.release.xcconfig"; path = "Target Support Files/Pods-blueit-blueitUITests/Pods-blueit-blueitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9A300D882936E7F40007E38A /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		9A383BA92937087F00E2546F /* blueitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blueitTableViewCell.swift; sourceTree = "<group>"; };
-		9A5DD71D29491BA200E892A3 /* AskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskTableViewController.swift; sourceTree = "<group>"; };
-		9A5DD71F29491BE000E892A3 /* AskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskTableViewCell.swift; sourceTree = "<group>"; };
+		9A5DD7212949422600E892A3 /* TabPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPostViewController.swift; sourceTree = "<group>"; };
 		9A5E0C4F2940362700213272 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		A0FBB8DD292924CB009C3EEB /* RedditAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditAPICaller.swift; sourceTree = "<group>"; };
 		C5E710CEFBA97A2E107AD75C /* Pods-blueitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blueitTests.debug.xcconfig"; path = "Target Support Files/Pods-blueitTests/Pods-blueitTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -155,8 +153,7 @@
 				9A383BA92937087F00E2546F /* blueitTableViewCell.swift */,
 				9A5E0C4F2940362700213272 /* PostViewController.swift */,
 				6665DC8E29483ED00050810F /* ProfileViewController.swift */,
-				9A5DD71D29491BA200E892A3 /* AskTableViewController.swift */,
-				9A5DD71F29491BE000E892A3 /* AskTableViewCell.swift */,
+				9A5DD7212949422600E892A3 /* TabPostViewController.swift */,
 			);
 			path = blueit;
 			sourceTree = "<group>";
@@ -433,9 +430,8 @@
 				D1EE55B12924551D000FD81D /* LoginViewController.swift in Sources */,
 				D175100C291ADAB0002C1715 /* AppDelegate.swift in Sources */,
 				9A5E0C502940362700213272 /* PostViewController.swift in Sources */,
-				9A5DD72029491BE000E892A3 /* AskTableViewCell.swift in Sources */,
+				9A5DD7222949422600E892A3 /* TabPostViewController.swift in Sources */,
 				9A383BAA2937087F00E2546F /* blueitTableViewCell.swift in Sources */,
-				9A5DD71E29491BA200E892A3 /* AskTableViewController.swift in Sources */,
 				A0FBB8DE292924CC009C3EEB /* RedditAPICaller.swift in Sources */,
 				9A300D892936E7F40007E38A /* HomeTableViewController.swift in Sources */,
 				6665DC8F29483ED00050810F /* ProfileViewController.swift in Sources */,
