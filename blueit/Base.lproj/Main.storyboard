@@ -20,10 +20,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="EEe-fw-qrm"/>
+                    <navigationItem key="navigationItem" id="7Xf-hY-ZcV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6R5-Nh-1mS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1302" y="616"/>
+            <point key="canvasLocation" x="1302" y="1318"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="smg-O5-QgY">
@@ -35,8 +36,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="ge5-b3-BeN" kind="relationship" relationship="viewControllers" id="yce-Pz-mqR"/>
                         <segue destination="Aox-iB-Ovo" kind="relationship" relationship="viewControllers" id="Jpa-lK-sGZ"/>
+                        <segue destination="bIj-YB-s1c" kind="relationship" relationship="viewControllers" id="VdM-17-ZjO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xbb-K0-joh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -69,7 +70,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="onLogin:" destination="fHd-VH-BHQ" eventType="touchUpInside" id="GnO-gf-b7m"/>
-                                    <segue destination="RjU-vd-wdK" kind="presentation" modalPresentationStyle="fullScreen" id="h9T-Bh-aRS"/>
+                                    <segue destination="RjU-vd-wdK" kind="presentation" identifier="loginToHome" modalPresentationStyle="fullScreen" id="h9T-Bh-aRS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -342,11 +343,11 @@
             </objects>
             <point key="canvasLocation" x="5824" y="-625"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="cB5-JM-mGW">
             <objects>
                 <navigationController id="Aox-iB-Ovo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="1zM-Ey-AlB"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="1zM-Ey-AlB"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UKq-DG-V99">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -545,6 +546,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZSv-p7-1bT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4784" y="-625"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="uIW-LY-s7B">
+            <objects>
+                <navigationController id="bIj-YB-s1c" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" id="WxP-cP-kqx"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XVj-DL-Q6N">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.58431375029999999" green="0.74117654560000001" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.72812852009999995" green="0.8568498631" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <navigationBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" red="0.58431375029999999" green="0.74117654560000001" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <textAttributes key="largeTitleTextAttributes">
+                                <color key="textColor" red="0.58431375029999999" green="0.74117654560000001" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </textAttributes>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" red="0.58431375029999999" green="0.74117654560000001" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </navigationBarAppearance>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ge5-b3-BeN" kind="relationship" relationship="rootViewController" id="h5c-aU-XMa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qz0-3o-5mT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1302" y="603"/>
         </scene>
     </scenes>
     <resources>
