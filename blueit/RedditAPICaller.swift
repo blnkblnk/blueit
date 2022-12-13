@@ -77,7 +77,7 @@ class RedditAPICaller: NSObject {
                     print("[BRUH] error serializing json data")
                 }
             })
-
+            
             task.resume()
         } else {
             print("[BRUH] error when retrieving auth code: " + (url.valueOf("error") ?? "missing error"))
@@ -108,7 +108,7 @@ class RedditAPICaller: NSObject {
         
         let (data, _) = try await URLSession.shared.data(for: request)
         var json = try JSONSerialization.jsonObject(with: data, options: []) as Any
-                
+        
         while json as? NSDictionary != nil {
             if (json as! NSDictionary)["data"] != nil {
                 json = (json as! NSDictionary)["data"] as Any
@@ -133,9 +133,9 @@ class RedditAPICaller: NSObject {
         }
         return try await self.get(endPoint: "/user/\(username!)/submitted", params: ["limit":String(limit)]) as? [[String: Any]]
     }
-//    func getBestPosts(limit: Int) async throws -> [[String: Any]]? {
-//        return try await self.getPosts(limit: limit, endPoint: "/best")
-//    }
+    //    func getBestPosts(limit: Int) async throws -> [[String: Any]]? {
+    //        return try await self.getPosts(limit: limit, endPoint: "/best")
+    //    }
     func accessPost(post_list: [[String:Any]]?, index: Int) -> [String:Any]? {
         if post_list == nil {
             print("no posts")
@@ -205,7 +205,6 @@ class RedditAPICaller: NSObject {
         request.addValue("Bearer " + RedditAPICaller.sessionToken!, forHTTPHeaderField: "Authorization")
         
         let (_, response) = try await URLSession.shared.data(for: request)
-        let _httpResponse = response as? HTTPURLResponse
         
         return response as? HTTPURLResponse
     }
@@ -239,5 +238,21 @@ class RedditAPICaller: NSObject {
             "dir":String(dir),
             "id":full_id
         ])?.statusCode == 200
+    }
+    func submitTextPost(subreddit: String, title: String, text: String) async throws -> Any? {
+        return try await self.post(endPoint: "/api/submit", params: [
+            "sr":subreddit,
+            "title":title,
+            "kind":"self",
+            "text":text,
+        ])
+    }
+    func submitLinkPost(subreddit: String, title: String, link: String) async throws -> Any? {
+        return try await self.post(endPoint: "/api/submit", params: [
+            "sr":subreddit,
+            "title":title,
+            "kind":"link",
+            "text":link,
+        ])
     }
 }
