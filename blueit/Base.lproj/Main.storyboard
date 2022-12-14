@@ -29,6 +29,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Karma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LrD-GY-vdM">
+                                <rect key="frame" x="157" y="581" width="65" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wal-bV-K8J">
+                                <rect key="frame" x="154" y="491" width="68" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eBZ-ep-f4b"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -43,6 +54,7 @@
                     <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="EEe-fw-qrm"/>
                     <navigationItem key="navigationItem" id="7Xf-hY-ZcV"/>
                     <connections>
+                        <outlet property="Karma" destination="LrD-GY-vdM" id="jx8-NF-nVh"/>
                         <outlet property="ProfileImageView" destination="F4f-Ac-bTk" id="etP-BC-xuu"/>
                         <outlet property="ProfileUsername" destination="Tny-K4-YPA" id="mH5-sf-HDY"/>
                     </connections>

@@ -14,6 +14,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var ProfileUsername: UILabel!
     
     
+    @IBOutlet weak var Karma: UILabel!
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -35,8 +36,11 @@ class ProfileViewController: UIViewController {
             RedditAPICaller.client.getIdentity()
             let username = user?["name"] as? String ?? "name" //selftext
             self.ProfileUsername.text = username
+            let userlikes = user?["total_karma"] as? String ?? "total_karma"
+            self.Karma.text = userlikes
+            print(user?.keys as Any)
         }
-        
+    
         
     }
     
