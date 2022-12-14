@@ -40,7 +40,7 @@ class HomeTableViewController: UITableViewController {
             posts = try await RedditAPICaller.client.getPosts(limit: num_posts, endPoint: HomeTableViewController.feedEndpoint)
             self.tableView.reloadData()
             self.myRefreshControl.endRefreshing()
-            performDebug()
+            //performDebug()
         }
     }
     
