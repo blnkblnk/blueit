@@ -21,23 +21,22 @@ class blueitTableViewCell: UITableViewCell {
     
     @IBAction func solidupButton(_ sender: Any) {
     }
-    
-    var soliduped:Bool = false
-    
-    func setSolidup(_ isSoliduped:Bool) {
-        soliduped = isSoliduped
-        if (soliduped) {
-            upButton.setImage(UIImage(named: "Upvote Solid"), for: UIControl.State.normal)
+        var soliduped:Bool = false
+        
+        func setSolidup(_ isSoliduped:Bool) {
+            soliduped = isSoliduped
+            if (soliduped) {
+                upButton.setImage(UIImage(named: "Upvote Solid"), for: UIControl.State.normal)
+            }
+            else {
+                upButton.setImage(UIImage(named: "Upvote Outline"), for: UIControl.State.normal)
+            }
         }
-        else {
-            upButton.setImage(UIImage(named: "Upvote Outline"), for: UIControl.State.normal)
-        }
-    }
+    
     
     @IBAction func soliddownButton(_ sender: Any) {
     }
-    
-    var soliddowned:Bool = false
+        var soliddowned:Bool = false
     
     func setSoliddown(_ isSoliddowned:Bool) {
         soliddowned = isSoliddowned
@@ -46,9 +45,8 @@ class blueitTableViewCell: UITableViewCell {
         }
         else {
             downButton.setImage(UIImage(named: "Downvote Outline"), for: UIControl.State.normal)
+            }
         }
-    }
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()

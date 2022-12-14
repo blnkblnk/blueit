@@ -154,18 +154,38 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Headline" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhV-3G-tj1">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Headline" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhV-3G-tj1">
                                             <rect key="frame" x="12" y="74" width="361" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="uWZ-dc-Njd"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgw-K1-YuS">
-                                            <rect key="frame" x="32" y="127" width="341" height="123"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgw-K1-YuS">
+                                            <rect key="frame" x="32" y="127" width="341" height="113"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSN-G8-DGQ" userLabel="downButton">
+                                            <rect key="frame" x="69" y="238" width="54" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="Downvote Outline"/>
+                                            <connections>
+                                                <action selector="soliddownButton:" destination="I2z-7l-SbD" eventType="touchUpInside" id="VlY-n7-n1g"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwh-ad-K5w" userLabel="upButton">
+                                            <rect key="frame" x="21" y="238" width="54" height="44"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="Upvote Outline"/>
+                                            <connections>
+                                                <action selector="solidupButton:" destination="I2z-7l-SbD" eventType="touchUpInside" id="X4g-xS-HvM"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="ubN-1h-R3A" firstAttribute="leading" secondItem="yP9-aX-7H4" secondAttribute="trailing" constant="8" symbolic="YES" id="2A1-Bl-E2T"/>
@@ -177,6 +197,8 @@
                                         <constraint firstItem="ubN-1h-R3A" firstAttribute="top" secondItem="vVv-I2-Bcf" secondAttribute="bottom" constant="8" symbolic="YES" id="Q6b-Sf-fKf"/>
                                         <constraint firstItem="KhV-3G-tj1" firstAttribute="leading" secondItem="uJp-Ng-8Yd" secondAttribute="leading" constant="12" id="Rvs-Zl-lWl"/>
                                         <constraint firstItem="ubN-1h-R3A" firstAttribute="top" secondItem="vVv-I2-Bcf" secondAttribute="bottom" constant="8" symbolic="YES" id="XSn-Ly-2oV"/>
+                                        <constraint firstItem="hwh-ad-K5w" firstAttribute="top" secondItem="mgw-K1-YuS" secondAttribute="bottom" constant="7" id="asw-Sk-ahT"/>
+                                        <constraint firstItem="hwh-ad-K5w" firstAttribute="leading" secondItem="yP9-aX-7H4" secondAttribute="leading" id="ddg-R5-7E7"/>
                                         <constraint firstItem="vVv-I2-Bcf" firstAttribute="top" secondItem="uJp-Ng-8Yd" secondAttribute="topMargin" constant="1" id="lBs-0q-kEc"/>
                                         <constraint firstItem="mgw-K1-YuS" firstAttribute="leading" secondItem="uJp-Ng-8Yd" secondAttribute="leadingMargin" constant="12" id="nen-xV-XDW"/>
                                         <constraint firstItem="vVv-I2-Bcf" firstAttribute="leading" secondItem="yP9-aX-7H4" secondAttribute="trailing" constant="8" symbolic="YES" id="oaA-y5-Wpa"/>
@@ -187,8 +209,10 @@
                                 <connections>
                                     <outlet property="authorlabel" destination="ubN-1h-R3A" id="A2E-oV-fU6"/>
                                     <outlet property="content" destination="mgw-K1-YuS" id="0mU-QI-Tgl"/>
+                                    <outlet property="downButton" destination="aSN-G8-DGQ" id="evZ-1p-esM"/>
                                     <outlet property="headLine" destination="KhV-3G-tj1" id="Kyc-L5-vRv"/>
                                     <outlet property="subreddit" destination="vVv-I2-Bcf" id="x2t-cX-Rqx"/>
+                                    <outlet property="upButton" destination="hwh-ad-K5w" id="agy-Vn-CDP"/>
                                     <segue destination="pSS-g9-Bwg" kind="show" id="par-eU-PJS"/>
                                 </connections>
                             </tableViewCell>
@@ -215,7 +239,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9rD-zX-l5m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3381" y="-146"/>
+            <point key="canvasLocation" x="3380.9160305343512" y="-146.47887323943664"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ZUC-Ka-nNo">
@@ -437,28 +461,9 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMg-nk-3jx" userLabel="upButton">
-                                                    <rect key="frame" x="15" y="201" width="54" height="44"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="Upvote Outline"/>
-                                                    <connections>
-                                                        <action selector="solidupButton:" destination="slx-1N-hYD" eventType="touchUpInside" id="Mar-0W-TbR"/>
-                                                    </connections>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abS-by-bdv" userLabel="downButton">
-                                                    <rect key="frame" x="77" y="201" width="54" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="Downvote Outline"/>
-                                                    <connections>
-                                                        <action selector="soliddownButton:" destination="slx-1N-hYD" eventType="touchUpInside" id="l8n-id-fbx"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="pMg-nk-3jx" firstAttribute="leading" secondItem="YZq-dM-w2f" secondAttribute="leading" id="6J9-9i-Xyz"/>
                                                 <constraint firstItem="0Gn-Yg-E8b" firstAttribute="leading" secondItem="YZq-dM-w2f" secondAttribute="trailing" constant="18" id="7wi-yK-dow"/>
-                                                <constraint firstItem="pMg-nk-3jx" firstAttribute="top" secondItem="qVz-ff-dCS" secondAttribute="bottom" constant="8" id="Gfq-2o-Rge"/>
                                                 <constraint firstItem="YZq-dM-w2f" firstAttribute="top" secondItem="EEg-m5-C29" secondAttribute="top" constant="11" id="Id0-IT-Bqj"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Cfc-7K-pD7" secondAttribute="trailing" constant="265.67000000000002" id="Lbr-rV-Asj"/>
                                                 <constraint firstItem="qVz-ff-dCS" firstAttribute="leading" secondItem="EEg-m5-C29" secondAttribute="leadingMargin" id="MAg-l5-rpt"/>
@@ -471,10 +476,6 @@
                                                 <constraint firstItem="Cfc-7K-pD7" firstAttribute="top" secondItem="YZq-dM-w2f" secondAttribute="bottom" constant="7.6699999999999999" id="q9v-Nj-zhl"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="downButton" destination="abS-by-bdv" id="LJX-CM-h37"/>
-                                            <outlet property="upButton" destination="pMg-nk-3jx" id="p2s-Ot-XcC"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
