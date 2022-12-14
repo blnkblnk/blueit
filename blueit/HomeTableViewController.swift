@@ -7,8 +7,6 @@
 
 import UIKit
 
-let debug = true
-
 class HomeTableViewController: UITableViewController {
     public static var client: HomeTableViewController? = nil
     var num_posts = 0
