@@ -140,11 +140,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="feedCell" rowHeight="279" id="I2z-7l-SbD" customClass="blueitTableViewCell" customModule="blueit" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="393" height="279"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="feedCell" rowHeight="316" id="I2z-7l-SbD" customClass="blueitTableViewCell" customModule="blueit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="393" height="316"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I2z-7l-SbD" id="uJp-Ng-8Yd">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="279"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="316"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="120" translatesAutoresizingMaskIntoConstraints="NO" id="yP9-aX-7H4">
@@ -176,27 +176,33 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgw-K1-YuS">
-                                            <rect key="frame" x="32" y="127" width="341" height="113"/>
+                                            <rect key="frame" x="32" y="127" width="341" height="150"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwh-ad-K5w" userLabel="upButton">
-                                            <rect key="frame" x="272" y="235" width="54" height="44"/>
+                                            <rect key="frame" x="110.66666666666669" y="272" width="215.33333333333331" height="44"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" image="Upvote Outline"/>
                                             <connections>
                                                 <action selector="solidupButton:" destination="I2z-7l-SbD" eventType="touchUpInside" id="X4g-xS-HvM"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSN-G8-DGQ" userLabel="downButton">
-                                            <rect key="frame" x="319" y="235" width="54" height="44"/>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSN-G8-DGQ" userLabel="downButton">
+                                            <rect key="frame" x="334" y="273" width="54" height="43.666666666666686"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" image="Downvote Outline"/>
                                             <connections>
                                                 <action selector="soliddownButton:" destination="I2z-7l-SbD" eventType="touchUpInside" id="VlY-n7-n1g"/>
                                             </connections>
                                         </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="image link" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZx-OZ-1H6">
+                                            <rect key="frame" x="32.000000000000007" y="281" width="76.666666666666686" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="ubN-1h-R3A" firstAttribute="leading" secondItem="yP9-aX-7H4" secondAttribute="trailing" constant="8" symbolic="YES" id="2A1-Bl-E2T"/>
@@ -214,9 +220,13 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="hwh-ad-K5w" secondAttribute="trailing" constant="47" id="b55-Dp-gpd"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="mgw-K1-YuS" secondAttribute="bottom" constant="28" id="kcv-vK-jM0"/>
                                         <constraint firstItem="vVv-I2-Bcf" firstAttribute="top" secondItem="uJp-Ng-8Yd" secondAttribute="topMargin" constant="1" id="lBs-0q-kEc"/>
+                                        <constraint firstItem="hwh-ad-K5w" firstAttribute="leading" secondItem="DZx-OZ-1H6" secondAttribute="trailing" constant="2" id="lbZ-oi-yz3"/>
                                         <constraint firstItem="vVv-I2-Bcf" firstAttribute="leading" secondItem="yP9-aX-7H4" secondAttribute="trailing" constant="8" symbolic="YES" id="oaA-y5-Wpa"/>
                                         <constraint firstItem="hwh-ad-K5w" firstAttribute="baseline" secondItem="aSN-G8-DGQ" secondAttribute="baseline" id="psu-Em-RGx"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="DZx-OZ-1H6" secondAttribute="bottom" constant="2" id="s70-ag-CvK"/>
                                         <constraint firstItem="KhV-3G-tj1" firstAttribute="top" secondItem="yP9-aX-7H4" secondAttribute="bottom" constant="12" id="sJN-AX-FW0"/>
+                                        <constraint firstItem="DZx-OZ-1H6" firstAttribute="leading" secondItem="uJp-Ng-8Yd" secondAttribute="leadingMargin" constant="12" id="vuo-SF-ad8"/>
+                                        <constraint firstItem="DZx-OZ-1H6" firstAttribute="top" secondItem="mgw-K1-YuS" secondAttribute="bottom" constant="4" id="xWu-Zr-TSL"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -224,6 +234,7 @@
                                     <outlet property="content" destination="mgw-K1-YuS" id="0mU-QI-Tgl"/>
                                     <outlet property="downButton" destination="aSN-G8-DGQ" id="evZ-1p-esM"/>
                                     <outlet property="headLine" destination="KhV-3G-tj1" id="Kyc-L5-vRv"/>
+                                    <outlet property="imageLink" destination="DZx-OZ-1H6" id="wrD-Sg-fCU"/>
                                     <outlet property="subreddit" destination="vVv-I2-Bcf" id="x2t-cX-Rqx"/>
                                     <outlet property="upButton" destination="hwh-ad-K5w" id="agy-Vn-CDP"/>
                                 </connections>

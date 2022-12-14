@@ -15,6 +15,7 @@ class blueitTableViewCell: UITableViewCell {
     @IBOutlet weak var headLine: UILabel!
     @IBOutlet weak var content: UILabel!
     
+    @IBOutlet weak var imageLink: UILabel!
     
     @IBOutlet weak var upButton: UIButton!
     @IBOutlet weak var downButton: UIButton!

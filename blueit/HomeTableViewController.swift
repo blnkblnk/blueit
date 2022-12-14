@@ -72,7 +72,7 @@ class HomeTableViewController: UITableViewController {
         cell.headLine.text = post?["title"] as? String ?? "no title" //title
         cell.content.text = post?["selftext"] as? String ?? "no selftext" //selftext
         
-        
+        cell.imageLink.text = post?["url_overridden_by_dest"] as? String ?? "______________________________"
         
         
         print("got post link \(post?["url_overridden_by_dest"] ?? "nil")")
