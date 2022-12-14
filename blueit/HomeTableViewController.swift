@@ -105,6 +105,11 @@ class HomeTableViewController: UITableViewController {
         self.performSegue(withIdentifier: "goToComments", sender: nil)
         
     }
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath){
+        if indexPath.row + 1 == posts?.count {
+            loadmorefeed()
+        }
+    }
     func performDebug() {
         Task {
             //log posts
