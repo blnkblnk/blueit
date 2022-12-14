@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fHd-VH-BHQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fHd-VH-BHQ">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -237,14 +237,14 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="Xdy-AV-OjF" kind="show" identifier="goToComments" id="Lqb-V4-bLV"/>
+                        <segue destination="q83-kS-Yxc" kind="show" identifier="goToComments" id="Lqb-V4-bLV"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9rD-zX-l5m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3380.9160305343512" y="-146.47887323943664"/>
         </scene>
-        <!--Comment Table View Controller-->
+        <!--Comments-->
         <scene sceneID="Au0-oF-lxZ">
             <objects>
                 <tableViewController id="Xdy-AV-OjF" customClass="commentTableViewController" customModule="blueit" customModuleProvider="target" sceneMemberID="viewController">
@@ -295,11 +295,13 @@
                             <outlet property="delegate" destination="Xdy-AV-OjF" id="e4I-Ez-OzD"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="9sf-2j-hgl"/>
+                    <navigationItem key="navigationItem" title="Comments" id="9sf-2j-hgl">
+                        <barButtonItem key="backBarButtonItem" title="Back to Feed" id="uAn-aa-8Ha"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n5c-1R-uLH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4934" y="220"/>
+            <point key="canvasLocation" x="5860.3053435114498" y="219.71830985915494"/>
         </scene>
         <!--Post View Controller-->
         <scene sceneID="flr-zX-Nh5">
@@ -743,6 +745,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8d6-3v-jiC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2271" y="603"/>
+        </scene>
+        <!--Comments-->
+        <scene sceneID="xtb-2T-pis">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q83-kS-Yxc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Comments" id="byd-ip-JHQ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VMQ-vR-77k">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xdy-AV-OjF" kind="relationship" relationship="rootViewController" id="I0h-ag-P5G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4yY-Bn-bZc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4933.5877862595416" y="219.71830985915494"/>
         </scene>
     </scenes>
     <resources>

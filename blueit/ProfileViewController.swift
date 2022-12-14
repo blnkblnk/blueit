@@ -30,10 +30,12 @@ class ProfileViewController: UIViewController {
     }
     
     func loadUserData(){
-        
-       // let user = try await RedditAPICaller.client.getIdentity()
-       // let ProfileUsername = user?["name"] as? String ?? "name" //selftext
-        
+        Task{
+            let user = try await
+            RedditAPICaller.client.getIdentity()
+            let username = user?["name"] as? String ?? "name" //selftext
+            self.ProfileUsername.text = username
+        }
         
         
     }
