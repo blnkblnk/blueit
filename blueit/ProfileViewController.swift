@@ -37,9 +37,24 @@ class ProfileViewController: UIViewController {
             let username = user?["name"] as? String ?? "name" //selftext
             self.ProfileUsername.text = username
             let userlikes = user?["total_karma"] as? Int ?? 0
-            print(user?["total_karma"] as Any)
+            
             self.Karma.text = String(userlikes)
             print(user?.keys as Any)
+            print(user?["created"] as Any)
+            print(user?["created_utc"] as Any)
+            // Create a Date object from the epoch time
+            let time = TimeInterval(integerLiteral: (user?["created"] as? Int64 ?? 0))
+            let date = Date(timeIntervalSince1970: time)
+
+            // Create a date formatter to convert the date to a string
+            let dateFormatter = DateFormatter()
+
+            // Set the date format to the desired string format
+            dateFormatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
+
+            // Convert the date to a string
+            let timeString = dateFormatter.string(from: date)
+            print(timeString)
         }
     
         

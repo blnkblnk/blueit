@@ -27,6 +27,9 @@ class SubPostViewController: UIViewController, UITextViewDelegate{
         let varname = subredditText.text
         let varname1 = textTitle.text
         let varname2 = textText.text
+        if varname == nil || varname1 == nil {
+            return
+        }
         Task{
             let post_status = try await
             RedditAPICaller.client.submitTextPost(subreddit: varname!, title: varname1!, text: varname2 ?? "" )
