@@ -36,8 +36,9 @@ class ProfileViewController: UIViewController {
             RedditAPICaller.client.getIdentity()
             let username = user?["name"] as? String ?? "name" //selftext
             self.ProfileUsername.text = username
-            let userlikes = user?["total_karma"] as? String ?? "total_karma"
-            self.Karma.text = userlikes
+            let userlikes = user?["total_karma"] as? Int ?? 0
+            print(user?["total_karma"] as Any)
+            self.Karma.text = String(userlikes)
             print(user?.keys as Any)
         }
     
