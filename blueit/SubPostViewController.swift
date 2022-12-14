@@ -20,8 +20,6 @@ class SubPostViewController: UIViewController, UITextViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         subredditText.delegate = self
-        textText.delegate = self
-        textTitle.delegate = self
         // Do any additional setup after loading the view.
     }
     

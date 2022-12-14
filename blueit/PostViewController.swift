@@ -42,7 +42,7 @@ class PostViewController: UIViewController, UITextViewDelegate {
     
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         let totalLength = textView.text.count + text.count
-        if totalLength <= 40000 {
+        if totalLength <= 20 {
             return true
         } else {
             return false
@@ -50,7 +50,7 @@ class PostViewController: UIViewController, UITextViewDelegate {
     }
     
     func textViewDidChange(_ textView: UITextView) {
-        characterCount.text = "\(40000 - textView.text.count) characters left:"
+        characterCount.text = "\(20 - textView.text.count) characters left:"
     }
     
     
