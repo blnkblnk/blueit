@@ -28,9 +28,12 @@ class SubPostViewController: UIViewController, UITextViewDelegate{
         let varname1 = textTitle.text
         let varname2 = textText.text
         Task{
-            _ = try await
+            let post_status = try await
             RedditAPICaller.client.submitTextPost(subreddit: varname!, title: varname1!, text: varname2 ?? "" )
-            
+            if post_status == true {
+                HomeTableViewController.feedEndpoint = "/r/\(varname ?? "test")/new"
+                self.dismiss(animated: true)
+            }
             
         }
     }
