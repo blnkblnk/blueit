@@ -41,8 +41,7 @@ class ProfileViewController: UIViewController {
             let userlikes = user?["total_karma"] as? Int ?? 0
             
             self.Karma.text = String(userlikes)
-            let accage = user?["created"] as? Int ?? 0
-            self.Age.text = String(accage)
+            //let accage = user?["created"] as? Int ?? 0
             let accoins = user?["coins"] as? Int ?? 0
             self.coins.text = String(accoins)
             print(user?.keys as Any)
@@ -61,6 +60,7 @@ class ProfileViewController: UIViewController {
             // Convert the date to a string
             let timeString = dateFormatter.string(from: date)
             print(timeString)
+            self.Age.text = String(timeString)
         }
     
         
