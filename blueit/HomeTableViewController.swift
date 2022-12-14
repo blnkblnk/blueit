@@ -24,7 +24,7 @@ class HomeTableViewController: UITableViewController {
         
         loadfeed()
         
-        myRefreshControl.addTarget(self, action: #selector(loadmorefeed), for: .valueChanged)
+        myRefreshControl.addTarget(self, action: #selector(loadfeed), for: .valueChanged)
         tableView.refreshControl = myRefreshControl
         
     }
