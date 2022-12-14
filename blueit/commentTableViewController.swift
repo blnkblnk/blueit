@@ -8,10 +8,18 @@
 import UIKit
 
 class commentTableViewController: UITableViewController {
-
+    public static var post_id: String? = nil
+    var comment_list: [[String: Any]]? = nil
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        Task {
+            comment_list = try await RedditAPICaller.client.getComments(article_id: commentTableViewController.post_id, limit: 10)
+            self.tableView.reloadData()
+            //self.myRefreshControl.endRefreshing()
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -23,23 +31,27 @@ class commentTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        print (comment_list?.count as Any)
+        return comment_list?.count ?? 0
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "commentCell", for: indexPath) as! commentTableViewCell
 
         // Configure the cell...
-
+        let this_comment = RedditAPICaller.client.accessComment(comment_list: comment_list, index: indexPath.row)
+        cell.username.text = this_comment?["author"] as? String
+        cell.body.text = this_comment?["body"] as? String
+        
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

@@ -9,6 +9,8 @@ import UIKit
 
 class commentTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var body: UILabel!
+    @IBOutlet weak var username: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

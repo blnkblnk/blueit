@@ -40,6 +40,7 @@ class HomeTableViewController: UITableViewController {
             posts = try await RedditAPICaller.client.getPosts(limit: num_posts, endPoint: HomeTableViewController.feedEndpoint)
             self.tableView.reloadData()
             self.myRefreshControl.endRefreshing()
+            performDebug()
         }
     }
     
@@ -89,7 +90,18 @@ class HomeTableViewController: UITableViewController {
         
         return posts?.count ?? 0
     }
-
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let clicked_post = RedditAPICaller.client.accessPost(post_list: posts, index: indexPath.row)
+        let clicked_post_id = clicked_post?["id"] as? String
+        print(clicked_post_id as Any)
+        guard clicked_post_id != nil else {
+            return
+        }
+        commentTableViewController.post_id = clicked_post_id
+        self.performSegue(withIdentifier: "goToComments", sender: nil)
+        
+    }
     func performDebug() {
         Task {
             //log posts
@@ -102,7 +114,7 @@ class HomeTableViewController: UITableViewController {
             //you need the id of a post to get its comments
             //getComments only gets the top level comments (cant get replys to comments yet)
             let first_post_id = first_post?["id"]
-            let comments = try await RedditAPICaller.client.getComments(article_id: first_post_id as? String, limit: 2)
+            let comments = try await RedditAPICaller.client.getComments(article_id: first_post_id as? String, limit: 10)
             //log comments
             print("=====COMMENTS=====")
             print(comments as Any)
