@@ -627,7 +627,7 @@
         <!--BlueIt Post-->
         <scene sceneID="w8y-4L-ECY">
             <objects>
-                <viewController id="Bpr-tm-uF8" sceneMemberID="viewController">
+                <viewController id="Bpr-tm-uF8" customClass="SubPostViewController" customModule="blueit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H6S-vL-RHO">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -715,15 +715,13 @@
                     <navigationItem key="navigationItem" title="BlueIt Post" id="bVj-Pq-DPM">
                         <barButtonItem key="rightBarButtonItem" title="New Post" id="cGe-wF-kVH">
                             <connections>
-                                <action selector="newPost:" destination="Bpr-tm-uF8" id="dEG-Eb-9pn"/>
+                                <action selector="newPost:" destination="Bpr-tm-uF8" id="4fh-tE-Nu5"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="characterLimit1" destination="EkC-Um-h1s" id="GIw-OC-43c"/>
-                        <outlet property="subredditText" destination="aOh-Zf-bM7" id="sIl-AJ-9u5"/>
-                        <outlet property="textText" destination="q3x-65-Hfd" id="fgo-mv-cnn"/>
-                        <outlet property="titleText" destination="dD5-bB-JOy" id="Xdc-uq-5BM"/>
+                        <outlet property="characterLimit1" destination="EkC-Um-h1s" id="0sa-pz-frE"/>
+                        <outlet property="subredditText" destination="aOh-Zf-bM7" id="rQQ-PX-SOS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yvo-gA-lqI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
