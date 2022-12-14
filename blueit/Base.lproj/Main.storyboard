@@ -163,22 +163,23 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgw-K1-YuS">
-                                            <rect key="frame" x="32" y="126.99999999999999" width="341" height="20.333333333333329"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgw-K1-YuS">
+                                            <rect key="frame" x="32" y="127" width="341" height="113"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSN-G8-DGQ" userLabel="downButton">
-                                            <rect key="frame" x="69" y="235" width="54" height="44"/>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSN-G8-DGQ" userLabel="downButton">
+                                            <rect key="frame" x="69" y="238" width="54" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" image="Downvote Outline"/>
                                             <connections>
                                                 <action selector="soliddownButton:" destination="I2z-7l-SbD" eventType="touchUpInside" id="VlY-n7-n1g"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwh-ad-K5w" userLabel="upButton">
-                                            <rect key="frame" x="20" y="234" width="54" height="44"/>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwh-ad-K5w" userLabel="upButton">
+                                            <rect key="frame" x="21" y="238" width="54" height="44"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" image="Upvote Outline"/>
                                             <connections>
@@ -190,23 +191,18 @@
                                         <constraint firstItem="ubN-1h-R3A" firstAttribute="leading" secondItem="yP9-aX-7H4" secondAttribute="trailing" constant="8" symbolic="YES" id="2A1-Bl-E2T"/>
                                         <constraint firstAttribute="trailing" secondItem="KhV-3G-tj1" secondAttribute="trailing" constant="20" id="328-Tr-8AD"/>
                                         <constraint firstItem="yP9-aX-7H4" firstAttribute="leading" secondItem="uJp-Ng-8Yd" secondAttribute="leadingMargin" constant="1" id="94B-DN-tU3"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="mgw-K1-YuS" secondAttribute="bottom" constant="18" id="BfB-d6-Wvs"/>
                                         <constraint firstItem="yP9-aX-7H4" firstAttribute="top" secondItem="uJp-Ng-8Yd" secondAttribute="topMargin" constant="1" id="IZw-4x-Yug"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hwh-ad-K5w" secondAttribute="trailing" constant="20" symbolic="YES" id="Iga-47-aBp"/>
                                         <constraint firstItem="mgw-K1-YuS" firstAttribute="top" secondItem="KhV-3G-tj1" secondAttribute="bottom" constant="8" id="JSh-Kx-w3A"/>
-                                        <constraint firstItem="aSN-G8-DGQ" firstAttribute="leading" secondItem="ubN-1h-R3A" secondAttribute="leading" id="KI2-mx-MnW"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ubN-1h-R3A" secondAttribute="trailing" constant="20" symbolic="YES" id="Nly-lD-IUY"/>
                                         <constraint firstItem="ubN-1h-R3A" firstAttribute="top" secondItem="vVv-I2-Bcf" secondAttribute="bottom" constant="8" symbolic="YES" id="Q6b-Sf-fKf"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vVv-I2-Bcf" secondAttribute="trailing" constant="20" symbolic="YES" id="RmP-JA-uXa"/>
                                         <constraint firstItem="KhV-3G-tj1" firstAttribute="leading" secondItem="uJp-Ng-8Yd" secondAttribute="leading" constant="12" id="Rvs-Zl-lWl"/>
-                                        <constraint firstItem="hwh-ad-K5w" firstAttribute="leading" secondItem="uJp-Ng-8Yd" secondAttribute="leadingMargin" id="V2F-1F-Rnc"/>
                                         <constraint firstItem="ubN-1h-R3A" firstAttribute="top" secondItem="vVv-I2-Bcf" secondAttribute="bottom" constant="8" symbolic="YES" id="XSn-Ly-2oV"/>
-                                        <constraint firstAttribute="bottom" secondItem="aSN-G8-DGQ" secondAttribute="bottom" id="YlQ-aB-1aj"/>
+                                        <constraint firstItem="hwh-ad-K5w" firstAttribute="top" secondItem="mgw-K1-YuS" secondAttribute="bottom" constant="7" id="asw-Sk-ahT"/>
+                                        <constraint firstItem="hwh-ad-K5w" firstAttribute="leading" secondItem="yP9-aX-7H4" secondAttribute="leading" id="ddg-R5-7E7"/>
                                         <constraint firstItem="vVv-I2-Bcf" firstAttribute="top" secondItem="uJp-Ng-8Yd" secondAttribute="topMargin" constant="1" id="lBs-0q-kEc"/>
                                         <constraint firstItem="mgw-K1-YuS" firstAttribute="leading" secondItem="uJp-Ng-8Yd" secondAttribute="leadingMargin" constant="12" id="nen-xV-XDW"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aSN-G8-DGQ" secondAttribute="trailing" constant="20" symbolic="YES" id="nhF-bd-bXC"/>
                                         <constraint firstItem="vVv-I2-Bcf" firstAttribute="leading" secondItem="yP9-aX-7H4" secondAttribute="trailing" constant="8" symbolic="YES" id="oaA-y5-Wpa"/>
                                         <constraint firstItem="KhV-3G-tj1" firstAttribute="top" secondItem="yP9-aX-7H4" secondAttribute="bottom" constant="12" id="sJN-AX-FW0"/>
-                                        <constraint firstItem="hwh-ad-K5w" firstAttribute="top" secondItem="mgw-K1-YuS" secondAttribute="bottom" constant="86.666666666666686" id="sWB-qe-seY"/>
                                         <constraint firstItem="mgw-K1-YuS" firstAttribute="trailing" secondItem="uJp-Ng-8Yd" secondAttribute="trailingMargin" id="xZZ-A8-egV"/>
                                     </constraints>
                                 </tableViewCellContentView>
