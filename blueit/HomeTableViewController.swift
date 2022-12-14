@@ -88,7 +88,7 @@ class HomeTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
-        return num_posts
+        return posts?.count ?? 0
     }
 
     func performDebug() {
