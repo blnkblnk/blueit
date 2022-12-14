@@ -24,19 +24,15 @@ class SubPostViewController: UIViewController, UITextViewDelegate{
     }
     
     @IBAction func newPost(_ sender: Any) {
-        if(!subredditText.text.isEmpty){
-            Task{
-           //     RedditAPICaller.client.submitTextPost(subreddit: "test", //title: "test", text: "test")
-                }
-            }
-        if(!textTitle.text.isEmpty){
+        let varname = subredditText.text
+        let varname1 = textTitle.text
+        let varname2 = textText.text
+        Task{
+            _ = try await
+            RedditAPICaller.client.submitTextPost(subreddit: varname!, title: varname1!, text: varname2 ?? "" )
+            
             
         }
-        if(!textText.text.isEmpty){
-            
-        }
-        
-        
     }
     
     
