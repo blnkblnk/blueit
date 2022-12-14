@@ -24,7 +24,7 @@ class HomeTableViewController: UITableViewController {
         
         loadfeed()
         
-        myRefreshControl.addTarget(self, action: #selector(loadfeed), for: .valueChanged)
+        myRefreshControl.addTarget(self, action: #selector(loadmorefeed), for: .valueChanged)
         tableView.refreshControl = myRefreshControl
         
     }
@@ -48,6 +48,9 @@ class HomeTableViewController: UITableViewController {
         
         print("API token = " + (RedditAPICaller.sessionToken ?? "nil"))
         loadPosts(amount: 10)
+    }
+    @objc func loadmorefeed(){
+        loadPosts(amount: num_posts+10)
     }
     
     @IBAction func onLogout(_ sender: Any) {
