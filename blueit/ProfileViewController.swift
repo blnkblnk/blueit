@@ -31,6 +31,8 @@ class ProfileViewController: UIViewController {
     
     func loadUserData(){
         
+       // let user = try await RedditAPICaller.client.getIdentity()
+       // let ProfileUsername = user?["name"] as? String ?? "name" //selftext
         
         
         
