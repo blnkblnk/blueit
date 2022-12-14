@@ -64,7 +64,7 @@
                     <connections>
                         <segue destination="Aox-iB-Ovo" kind="relationship" relationship="viewControllers" id="Jpa-lK-sGZ"/>
                         <segue destination="bIj-YB-s1c" kind="relationship" relationship="viewControllers" id="VdM-17-ZjO"/>
-                        <segue destination="WpO-np-mAB" kind="relationship" relationship="viewControllers" id="hYb-2w-pkt"/>
+                        <segue destination="nfH-fl-Uae" kind="relationship" relationship="viewControllers" id="k8R-3o-5WM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xbb-K0-joh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -609,25 +609,6 @@
             </objects>
             <point key="canvasLocation" x="1302" y="603"/>
         </scene>
-        <!--Post-->
-        <scene sceneID="2Dx-wm-ncX">
-            <objects>
-                <navigationController id="WpO-np-mAB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Post" image="square.and.pencil" catalog="system" selectedImage="rectangle.and.pencil.and.ellipsis" id="eyF-r9-LVg">
-                        <color key="badgeColor" red="0.035217953429999997" green="0.60642274439999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </tabBarItem>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jzi-Ku-VAD">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="Bpr-tm-uF8" kind="relationship" relationship="rootViewController" id="BGH-0h-JL8"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TCV-Ct-4xh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2234" y="603"/>
-        </scene>
         <!--BlueIt Post-->
         <scene sceneID="w8y-4L-ECY">
             <objects>
@@ -732,6 +713,35 @@
             </objects>
             <point key="canvasLocation" x="3381" y="603"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="Sge-mK-H1L">
+            <objects>
+                <navigationController id="nfH-fl-Uae" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="square.and.pencil" catalog="system" id="K5h-dP-fti"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WRk-3e-6hM">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.58431375029999999" green="0.74117654560000001" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.72812852009999995" green="0.8568498631" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <navigationBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" red="0.58431375029999999" green="0.74117654560000001" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <textAttributes key="largeTitleTextAttributes">
+                                <color key="textColor" red="0.58431375029999999" green="0.74117654560000001" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </textAttributes>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" red="0.58431375029999999" green="0.74117654560000001" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </navigationBarAppearance>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Bpr-tm-uF8" kind="relationship" relationship="rootViewController" id="JZ9-aW-Vak"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8d6-3v-jiC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2271" y="603"/>
+        </scene>
     </scenes>
     <resources>
         <image name="120" width="120" height="120"/>
@@ -739,7 +749,6 @@
         <image name="Downvote Outline" width="30" height="30"/>
         <image name="Upvote Outline" width="30" height="30"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
-        <image name="rectangle.and.pencil.and.ellipsis" catalog="system" width="128" height="80"/>
         <image name="reddit" width="36" height="36"/>
         <image name="reddit-icon" width="512" height="512"/>
         <image name="square.and.pencil" catalog="system" width="128" height="113"/>
