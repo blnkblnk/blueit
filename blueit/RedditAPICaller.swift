@@ -163,22 +163,23 @@ class RedditAPICaller: NSObject {
             "sort":sort
         ]) as? [[String: Any]]
         comments?.removeFirst()
-        return comments
-    }
-    func accessComment(comment_list: [[String:Any]]?, index: Int) -> [String:Any]? {
-        guard let comment = comment_list?[index]["data"] as? [String:Any] else {
+        guard let comments = comments?[0]["data"] as? [String:Any] else {
             print("could not get comment A")
             return nil
         }
-        guard let comment = comment["children"] as? [Any] else {
+        guard let comments = comments["children"] as? [[String:Any]] else {
             print("could not get comment B")
             return nil
         }
-        guard comment.count > 0 else {
-            print("no comment")
+        return comments
+    }
+    func accessComment(comment_list: [[String:Any]]?, index: Int) -> [String:Any]? {
+        guard comment_list?.count ?? 0 > index else {
+            print("comment index too big")
             return nil
         }
-        guard let comment = comment[0] as? [String:Any] else {
+        
+        guard let comment = comment_list?[index] as? [String:Any] else {
             print("could not get comment C")
             return nil
         }

@@ -9,6 +9,7 @@ import UIKit
 
 class blueitTableViewCell: UITableViewCell {
 
+    public var post_id: String? = nil
     @IBOutlet weak var subreddit: UILabel!
     @IBOutlet weak var authorlabel: UILabel!
     @IBOutlet weak var headLine: UILabel!
