@@ -11,6 +11,8 @@ class SubPostViewController: UIViewController, UITextViewDelegate{
     
     @IBOutlet weak var subredditText: UITextView!
     @IBOutlet weak var characterLimit1: UILabel!
+    @IBOutlet weak var textTitle: UITextView!
+    @IBOutlet weak var textText: UITextView!
     
     
     
@@ -18,7 +20,8 @@ class SubPostViewController: UIViewController, UITextViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         subredditText.delegate = self
-        
+        textText.delegate = self
+        textTitle.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -26,8 +29,20 @@ class SubPostViewController: UIViewController, UITextViewDelegate{
         if(!subredditText.text.isEmpty){
             
         }
+        if(!textTitle.text.isEmpty){
+            
+        }
+        if(!textText.text.isEmpty){
+            
+        }
+        
         
     }
+    
+    
+    
+    
+    
     
     
     

@@ -707,6 +707,8 @@
                     <connections>
                         <outlet property="characterLimit1" destination="EkC-Um-h1s" id="0sa-pz-frE"/>
                         <outlet property="subredditText" destination="aOh-Zf-bM7" id="rQQ-PX-SOS"/>
+                        <outlet property="textText" destination="q3x-65-Hfd" id="KCh-AG-hRe"/>
+                        <outlet property="textTitle" destination="dD5-bB-JOy" id="bWr-M9-qEd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yvo-gA-lqI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

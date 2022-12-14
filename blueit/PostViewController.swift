@@ -10,7 +10,6 @@ import UIKit
 class PostViewController: UIViewController, UITextViewDelegate {
 
     
-    @IBOutlet weak var TypeTitle: UITextView!
     @IBOutlet weak var TypeText: UITextView!
     @IBOutlet weak var characterCount: UILabel!
     
