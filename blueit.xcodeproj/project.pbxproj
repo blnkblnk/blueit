@@ -14,6 +14,7 @@
 		9A300D892936E7F40007E38A /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A300D882936E7F40007E38A /* HomeTableViewController.swift */; };
 		9A383BAA2937087F00E2546F /* blueitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A383BA92937087F00E2546F /* blueitTableViewCell.swift */; };
 		9A5DD7222949422600E892A3 /* TabPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DD7212949422600E892A3 /* TabPostViewController.swift */; };
+		9A5DD72429494FD600E892A3 /* selectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DD72329494FD600E892A3 /* selectViewController.swift */; };
 		9A5E0C502940362700213272 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5E0C4F2940362700213272 /* PostViewController.swift */; };
 		A0FBB8DE292924CC009C3EEB /* RedditAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FBB8DD292924CB009C3EEB /* RedditAPICaller.swift */; };
 		D175100C291ADAB0002C1715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D175100B291ADAB0002C1715 /* AppDelegate.swift */; };
@@ -56,6 +57,7 @@
 		9A300D882936E7F40007E38A /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		9A383BA92937087F00E2546F /* blueitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blueitTableViewCell.swift; sourceTree = "<group>"; };
 		9A5DD7212949422600E892A3 /* TabPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPostViewController.swift; sourceTree = "<group>"; };
+		9A5DD72329494FD600E892A3 /* selectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectViewController.swift; sourceTree = "<group>"; };
 		9A5E0C4F2940362700213272 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		A0FBB8DD292924CB009C3EEB /* RedditAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditAPICaller.swift; sourceTree = "<group>"; };
 		C5E710CEFBA97A2E107AD75C /* Pods-blueitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blueitTests.debug.xcconfig"; path = "Target Support Files/Pods-blueitTests/Pods-blueitTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				9A5E0C4F2940362700213272 /* PostViewController.swift */,
 				6665DC8E29483ED00050810F /* ProfileViewController.swift */,
 				9A5DD7212949422600E892A3 /* TabPostViewController.swift */,
+				9A5DD72329494FD600E892A3 /* selectViewController.swift */,
 			);
 			path = blueit;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A5DD72429494FD600E892A3 /* selectViewController.swift in Sources */,
 				D1EE55B12924551D000FD81D /* LoginViewController.swift in Sources */,
 				D175100C291ADAB0002C1715 /* AppDelegate.swift in Sources */,
 				9A5E0C502940362700213272 /* PostViewController.swift in Sources */,

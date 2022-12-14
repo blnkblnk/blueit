@@ -241,10 +241,10 @@
             </objects>
             <point key="canvasLocation" x="3380.9160305343512" y="-146.47887323943664"/>
         </scene>
-        <!--View Controller-->
+        <!--Select View Controller-->
         <scene sceneID="ZUC-Ka-nNo">
             <objects>
-                <viewController id="pSS-g9-Bwg" sceneMemberID="viewController">
+                <viewController id="pSS-g9-Bwg" customClass="selectViewController" customModule="blueit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dDv-6H-okE">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -305,6 +305,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1j1-1n-8GE"/>
+                    <connections>
+                        <outlet property="SelectedContent" destination="OFO-i0-w9q" id="zby-It-NDg"/>
+                        <outlet property="SelectedHeadline" destination="eQd-D1-onz" id="D56-3C-KNN"/>
+                        <outlet property="SelectedsubReddit" destination="Goi-0q-Jzu" id="6cY-vS-p1T"/>
+                        <outlet property="Selectedusername" destination="Ayo-FM-lEN" id="FQ4-8O-Twd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ezI-VI-7Gi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
