@@ -36,7 +36,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wal-bV-K8J">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profileIcon_snoob164d8a9-ff1b-47ee-937a-cdd9c273981a-headshot-f" translatesAutoresizingMaskIntoConstraints="NO" id="Wal-bV-K8J">
                                 <rect key="frame" x="154" y="491" width="68" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -784,6 +784,7 @@
         <image name="Downvote Outline" width="30" height="30"/>
         <image name="Upvote Outline" width="30" height="30"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="profileIcon_snoob164d8a9-ff1b-47ee-937a-cdd9c273981a-headshot-f" width="77" height="54"/>
         <image name="reddit" width="36" height="36"/>
         <image name="reddit-icon" width="512" height="512"/>
         <image name="square.and.pencil" catalog="system" width="128" height="113"/>
