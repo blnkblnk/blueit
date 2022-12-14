@@ -10,6 +10,7 @@ import UIKit
 let debug = true
 
 class HomeTableViewController: UITableViewController {
+    public static var client: HomeTableViewController? = nil
     var num_posts = 0
     var posts: [[String: Any]]? = nil
     public static var feedEndpoint = "/best"
@@ -20,6 +21,7 @@ class HomeTableViewController: UITableViewController {
     
     
     override func viewDidLoad() {
+        HomeTableViewController.client = self
         super.viewDidLoad()
         
         loadfeed()

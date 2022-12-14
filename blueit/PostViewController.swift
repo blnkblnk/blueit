@@ -19,7 +19,8 @@ class PostViewController: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         TypeText.becomeFirstResponder()
         TypeText.delegate = self
-
+        
+        
         // Do any additional setup after loading the view.
     }
     
@@ -35,7 +36,7 @@ class PostViewController: UIViewController, UITextViewDelegate {
             HomeTableViewController.feedEndpoint = "/r/\(TypeText.text ?? "askreddit")/new"
         }
         self.dismiss(animated: true)
-        
+        HomeTableViewController.client?.loadfeed()
     }
     
     // MARK: - Text view delegate
