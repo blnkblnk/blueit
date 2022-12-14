@@ -157,14 +157,16 @@ class RedditAPICaller: NSObject {
             print("no article id")
             return nil
         }
-        return try await self.get(endPoint: "/comments/"+article_id!, params: [
+        var comments = try await self.get(endPoint: "/comments/"+article_id!, params: [
             "limit":String(limit),
             "depth":String(depth),
             "sort":sort
         ]) as? [[String: Any]]
+        comments?.removeFirst()
+        return comments
     }
     func accessComment(comment_list: [[String:Any]]?, index: Int) -> [String:Any]? {
-        guard let comment = comment_list?[index+1]["data"] as? [String:Any] else {
+        guard let comment = comment_list?[index]["data"] as? [String:Any] else {
             print("could not get comment A")
             return nil
         }

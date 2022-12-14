@@ -40,7 +40,6 @@ class HomeTableViewController: UITableViewController {
             posts = try await RedditAPICaller.client.getPosts(limit: num_posts, endPoint: HomeTableViewController.feedEndpoint)
             self.tableView.reloadData()
             self.myRefreshControl.endRefreshing()
-
         }
     }
     
@@ -88,7 +87,7 @@ class HomeTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
-        return num_posts
+        return posts?.count ?? 0
     }
 
     func performDebug() {
@@ -127,7 +126,7 @@ class HomeTableViewController: UITableViewController {
             _ = try await RedditAPICaller.client.votePost(id: first_post_id as? String, dir: 1)
             
             let first_comment = RedditAPICaller.client.accessComment(comment_list: comments, index: 0)
-            
+            print("first comment text: \(first_comment?["body"] ?? "nil")")
             _ = try await RedditAPICaller.client.voteComment(id: first_comment?["id"] as? String, dir: 1)
             
             //print user
